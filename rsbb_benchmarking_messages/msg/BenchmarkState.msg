@@ -1,0 +1,10 @@
+uint8 START = 0
+uint8 READY = 1
+uint8 MANUAL_WAITING = 2
+uint8 GOAL_TRANSMITTING = 3
+uint8 RESULT_WAITING = 4
+uint8 SCORE_EVALUATING = 5
+uint8 SCORE_TRANSMITTING = 6
+uint8 END = 7
+uint8 state
+string payload

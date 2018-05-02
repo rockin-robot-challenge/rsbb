@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="49cm" height="35cm" viewBox="0 -380 962 684" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <polygon style="fill: #ffffff" points="2.04404,157.135 708.744,157.135 720.744,169.135 720.744,303.135 2.04404,303.135 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="2.04404,157.135 708.744,157.135 720.744,169.135 720.744,303.135 2.04404,303.135 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" points="708.744,157.135 708.744,169.135 720.744,169.135 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="9.04404" y="182.035">
+      <tspan x="9.04404" y="182.035">Benchmark Script                                                                           </tspan>
+      <tspan x="9.04404" y="198.035"> </tspan>
+      <tspan x="9.04404" y="214.035"></tspan>
+      <tspan x="9.04404" y="230.035"></tspan>
+      <tspan x="9.04404" y="246.035"></tspan>
+      <tspan x="9.04404" y="262.035"></tspan>
+      <tspan x="9.04404" y="278.035"></tspan>
+      <tspan x="9.04404" y="294.035"></tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="1.56813" y="-358.864" width="959.544" height="501.623"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1.56813" y="-358.864" width="959.544" height="501.623"/>
+    <rect style="fill: #ffffff" x="1.56813" y="-378.864" width="42.5" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1.56813" y="-378.864" width="42.5" height="20"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="3.56813" y="-364.864">BmBox</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="176.787" y="207.81" width="187.1" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="176.787" y="207.81" width="187.1" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:italic;font-weight:700" x="270.337" y="226.81">BenchmarkObject</text>
+    <rect style="fill: #ffffff" x="176.787" y="235.81" width="187.1" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="176.787" y="235.81" width="187.1" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="179.787" y="249.81">+benchmark_code: string</text>
+    <rect style="fill: #ffffff" x="176.787" y="255.81" width="187.1" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="176.787" y="255.81" width="187.1" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="179.787" y="269.81">+execute()</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="270.337,-122.24 270.337,-90.7978 270.337,-90.7978 270.337,-57.1198 "/>
+    <polygon style="fill: #ffffff" points="278.337,-122.24 270.337,-138.24 262.337,-122.24 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="278.337,-122.24 270.337,-138.24 262.337,-122.24 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="270.337,110.125 270.337,108.889 270.337,206.81 270.337,207.81 "/>
+    <polygon style="fill: #ffffff" points="278.337,110.125 270.337,94.1255 262.337,110.125 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="278.337,110.125 270.337,94.1255 262.337,110.125 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="683.851,77.8894 683.851,221.81 370.592,221.81 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="383.239,216.81 367.239,221.81 383.239,226.81 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="163.612" y="-56.1106" width="213.45" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="163.612" y="-56.1106" width="213.45" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:italic;font-weight:700" x="270.337" y="-37.1106">BaseBenchmarkObject</text>
+    <rect style="fill: #ffffff" x="163.612" y="-28.1106" width="213.45" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="163.612" y="-28.1106" width="213.45" height="52"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="166.612" y="-14.1106">+score</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="166.612" y="1.8894">+params</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="166.612" y="17.8894">+referee_score</text>
+    <rect style="fill: #ffffff" x="163.612" y="23.8894" width="213.45" height="68"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="163.612" y="23.8894" width="213.45" height="68"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="166.612" y="37.8894">+save_and_publish_score()</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="166.612" y="53.8894">+get_benchmark_run()</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="166.612" y="69.8894">+get_benchmark_team()</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="166.612" y="85.8894">+get_benchmark_code()</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="15.0866" y="-341.482" width="510.5" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="15.0866" y="-341.482" width="510.5" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:italic;font-weight:700" x="270.337" y="-322.482">RefBoxComm</text>
+    <rect style="fill: #ffffff" x="15.0866" y="-313.482" width="510.5" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="15.0866" y="-313.482" width="510.5" height="8"/>
+    <rect style="fill: #ffffff" x="15.0866" y="-305.482" width="510.5" height="164"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="15.0866" y="-305.482" width="510.5" height="164"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="18.0866" y="-291.482">+request_manual_operation(manual_operation:ManualOperationObject)</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="18.0866" y="-275.482">+start_manual_operation(manual_operation:ManualOperationObject)</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="18.0866" y="-259.482">+wait_manual_operation()</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="18.0866" y="-243.482">+request_goal(goal:GoalObject)</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="18.0866" y="-227.482">+wait_goal_result()</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="18.0866" y="-211.482">+end_benchmark()</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="18.0866" y="-195.482">+is_benchmark_running()</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="18.0866" y="-179.482">+has_benchmark_timed_out()</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="18.0866" y="-163.482">+has_benchmark_been_stopped()</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="18.0866" y="-147.482">+get_end_description()</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="565.876" y="21.8894" width="235.95" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="565.876" y="21.8894" width="235.95" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:italic;font-weight:700" x="683.851" y="40.8894">Benchmark Script Server</text>
+    <rect style="fill: #ffffff" x="565.876" y="49.8894" width="235.95" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="565.876" y="49.8894" width="235.95" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="568.876" y="63.8894">+scripts: BenchmarkObject[]</text>
+    <rect style="fill: #ffffff" x="565.876" y="69.8894" width="235.95" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="565.876" y="69.8894" width="235.95" height="8"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="565.876" y="-309.864" width="364.2" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="565.876" y="-309.864" width="364.2" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="747.976" y="-290.864">GoalObject</text>
+    <rect style="fill: #ffffff" x="565.876" y="-281.864" width="364.2" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="565.876" y="-281.864" width="364.2" height="8"/>
+    <rect style="fill: #ffffff" x="565.876" y="-273.864" width="364.2" height="68"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="565.876" y="-273.864" width="364.2" height="68"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="568.876" y="-259.864">+GoalObject(request:yaml_string,timeout:float)</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="568.876" y="-243.864">+has_been_completed()</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="568.876" y="-227.864">+has_timed_out()</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="568.876" y="-211.864">+get_result()</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="565.876" y="-197.565" width="241" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="565.876" y="-197.565" width="241" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="686.376" y="-178.565">ManualOperationObject</text>
+    <rect style="fill: #ffffff" x="565.876" y="-169.565" width="241" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="565.876" y="-169.565" width="241" height="8"/>
+    <rect style="fill: #ffffff" x="565.876" y="-161.565" width="241" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="565.876" y="-161.565" width="241" height="52"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="568.876" y="-147.565">+ManualOperationObject(string)</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="568.876" y="-131.565">+has_been_completed()</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="568.876" y="-115.565">+get_result()</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="525.587,-295.482 541.731,-295.482 541.731,-295.864 559.171,-295.864 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="546.523,-290.864 562.523,-295.864 546.523,-300.864 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="525.587,-183.482 541.731,-183.482 541.731,-183.565 559.171,-183.565 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="546.523,-178.565 562.523,-183.565 546.523,-188.565 "/>
+  </g>
+</svg>

@@ -1,0 +1,28 @@
+<launch>
+	
+	<!-- TODO include map, and optitrack or vicon launchfiles -->
+	<arg name="mocap_config_file" default="$(find rsbb_mocap_optitrack)/config/mocap.yaml" />
+
+	<node pkg="rsbb_mocap_optitrack"
+			type="mocap_node"
+			name="mocap_node"
+			output="screen"
+			respawn="false"
+			launch-prefix=""
+			required="true">
+		<rosparam file="$(arg mocap_config_file)" command="load" />
+	</node>
+  
+	<node name="world_map"
+		pkg="tf"
+		type="static_transform_publisher"
+		args="0 0 0 0 0 0 world map 100"
+	/>
+
+	<node name="map_server"
+		pkg="map_server"
+		type="map_server"
+		args="$(find rockin_mocap)/config/lisbon_home_testbed_map.yaml"
+	/>
+	
+</launch>

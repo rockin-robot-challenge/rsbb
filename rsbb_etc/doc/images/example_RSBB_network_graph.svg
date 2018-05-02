@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created by diasvg.py -->
+<svg width="20.981cm" height="12.625cm" viewBox="1.698 1.377 22.679 14.002"
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+<polyline fill="none" stroke="#000000" stroke-width="0.030"  points="16.703,11.297 18.088,11.297 18.088,10.447 19.474,10.447 "/>
+<rect x="19.474" y="8.797" width="1.000" height="2.200" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="19.474" y="8.797" width="1.000" height="2.200" fill="none" stroke="#000000" stroke-width="0.010" />
+<text x="19.974" y="9.843"  fill="#000000" text-anchor="middle" font-size="0.21" font-family="sans" font-style="normal" font-weight="400">
+MOCAP</text>
+<text x="19.974" y="10.055"  fill="#000000" text-anchor="middle" font-size="0.21" font-family="sans" font-style="normal" font-weight="400">
+SWITCH</text>
+<polyline fill="none" stroke="#000000" stroke-width="0.030"  points="16.703,8.497 18.088,8.497 18.088,9.347 19.474,9.347 "/>
+<rect x="19.474" y="5.797" width="1.000" height="2.200" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="19.474" y="5.797" width="1.000" height="2.200" fill="none" stroke="#000000" stroke-width="0.010" />
+<text x="19.974" y="6.843"  fill="#000000" text-anchor="middle" font-size="0.21" font-family="sans" font-style="normal" font-weight="400">
+HAD</text>
+<text x="19.974" y="7.055"  fill="#000000" text-anchor="middle" font-size="0.21" font-family="sans" font-style="normal" font-weight="400">
+SWITCH</text>
+<polyline fill="none" stroke="#000000" stroke-width="0.030"  points="16.703,6.897 16.718,6.897 19.459,6.897 19.474,6.897 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.030"  points="16.703,12.897 16.718,12.897 19.459,12.897 19.474,12.897 "/>
+<rect x="19.474" y="11.797" width="1.000" height="2.200" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="19.474" y="11.797" width="1.000" height="2.200" fill="none" stroke="#000000" stroke-width="0.010" />
+<text x="19.974" y="12.737"  fill="#000000" text-anchor="middle" font-size="0.21" font-family="sans" font-style="normal" font-weight="400">
+MOCAP</text>
+<text x="19.974" y="12.949"  fill="#000000" text-anchor="middle" font-size="0.21" font-family="sans" font-style="normal" font-weight="400">
+CAMERAS</text>
+<text x="19.974" y="13.161"  fill="#000000" text-anchor="middle" font-size="0.21" font-family="sans" font-style="normal" font-weight="400">
+SWITCH</text>
+<polyline fill="none" stroke="#000000" stroke-width="0.030" stroke-dasharray="0.10,0.10" points="16.703,5.297 18.088,5.297 18.088,4.447 19.474,4.447 "/>
+<rect x="19.474" y="2.797" width="1.000" height="2.200" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="19.474" y="2.797" width="1.000" height="2.200" fill="none" stroke="#000000" stroke-width="0.010" />
+<text x="19.974" y="3.843"  fill="#000000" text-anchor="middle" font-size="0.21" font-family="sans" font-style="normal" font-weight="400">
+WIRELESS</text>
+<text x="19.974" y="4.055"  fill="#000000" text-anchor="middle" font-size="0.21" font-family="sans" font-style="normal" font-weight="400">
+ROUTER</text>
+<polyline fill="none" stroke="#000000" stroke-width="0.030" stroke-dasharray="0.10,0.10" points="16.674,1.997 18.074,1.997 18.074,3.347 19.474,3.347 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.030"  points="20.474,3.897 20.489,3.897 21.559,3.897 21.574,3.897 "/>
+<rect x="21.574" y="3.297" width="1.100" height="1.200" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="21.574" y="3.297" width="1.100" height="1.200" fill="none" stroke="#000000" stroke-width="0.010" />
+<text x="22.124" y="3.843"  fill="#000000" text-anchor="middle" font-size="0.21" font-family="sans" font-style="normal" font-weight="400">
+INTERNET</text>
+<text x="22.124" y="4.055"  fill="#000000" text-anchor="middle" font-size="0.21" font-family="sans" font-style="normal" font-weight="400">
+10.0.0.1</text>
+<text x="18.274" y="2.497"  fill="#000000" text-anchor="start" font-size="0.21" font-family="sans" font-style="normal" font-weight="400">
+wireless connection</text>
+<text x="18.274" y="5.197"  fill="#000000" text-anchor="start" font-size="0.21" font-family="sans" font-style="normal" font-weight="400">
+wireless/ethernet connection</text>
+<ellipse cx="14.474" cy="2.997" rx="0.400" ry="0.400" fill="#FFFFFF" stroke="none"  /><ellipse cx="14.474" cy="2.997" rx="0.400" ry="0.400" fill="none" stroke="#000000"  stroke-width="0.040" /><ellipse cx="14.474" cy="2.997" rx="0.400" ry="0.400" fill="none" stroke="#000000"  stroke-width="0.040" /><rect x="14.074" y="1.397" width="2.600" height="1.200" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="14.074" y="1.397" width="2.600" height="1.200" fill="none" stroke="#000000" stroke-width="0.040" />
+<text x="15.374" y="1.731"  fill="#000000" text-anchor="middle" font-size="0.21" font-family="sans" font-style="normal" font-weight="400">
+ROBOT</text>
+<text x="15.374" y="1.943"  fill="#000000" text-anchor="middle" font-size="0.21" font-family="sans" font-style="normal" font-weight="400">
+addr: 10.2.0.x</text>
+<text x="15.374" y="2.155"  fill="#000000" text-anchor="middle" font-size="0.21" font-family="sans" font-style="normal" font-weight="400">
+Bcast: 10.2.0.255</text>
+<text x="15.374" y="2.366"  fill="#000000" text-anchor="middle" font-size="0.21" font-family="sans" font-style="normal" font-weight="400">
+gateway: 10.2.0.1</text>
+<ellipse cx="16.274" cy="2.997" rx="0.400" ry="0.400" fill="#FFFFFF" stroke="none"  /><ellipse cx="16.274" cy="2.997" rx="0.400" ry="0.400" fill="none" stroke="#000000"  stroke-width="0.040" /><ellipse cx="16.274" cy="2.997" rx="0.400" ry="0.400" fill="none" stroke="#000000"  stroke-width="0.040" /><rect x="1.703" y="4.397" width="15.000" height="5.000" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="1.703" y="4.397" width="15.000" height="5.000" fill="none" stroke="#000000" stroke-width="0.010" />
+<rect x="13.697" y="4.797" width="3.000" height="1.000" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="13.697" y="4.797" width="3.000" height="1.000" fill="none" stroke="#000000" stroke-width="0.010" />
+<polyline fill="none" stroke="#000000" stroke-width="0.030"  points="5.297,6.897 5.128,6.897 8.588,6.897 8.419,6.897 "/>
+<polygon fill="#000000" stroke="none" stroke-width="0.030" points="5.147,6.897 4.947,6.997 4.997,6.897 4.947,6.797 "/>
+<polygon fill="none" stroke="#000000" stroke-width="0.030"  points="5.147,6.897 4.947,6.997 4.997,6.897 4.947,6.797 "/>
+<polygon fill="#000000" stroke="none" stroke-width="0.030" points="8.569,6.897 8.769,6.797 8.719,6.897 8.769,6.997 "/>
+<polygon fill="none" stroke="#000000" stroke-width="0.030"  points="8.569,6.897 8.769,6.797 8.719,6.897 8.769,6.997 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.030"  points="5.286,7.147 6.903,7.147 6.903,8.497 8.419,8.497 "/>
+<polygon fill="#000000" stroke="none" stroke-width="0.030" points="5.136,7.147 5.336,7.047 5.286,7.147 5.336,7.247 "/>
+<polygon fill="none" stroke="#000000" stroke-width="0.030"  points="5.136,7.147 5.336,7.047 5.286,7.147 5.336,7.247 "/>
+<polygon fill="#000000" stroke="none" stroke-width="0.030" points="8.569,8.497 8.369,8.597 8.419,8.497 8.369,8.397 "/>
+<polygon fill="none" stroke="#000000" stroke-width="0.030"  points="8.569,8.497 8.369,8.597 8.419,8.497 8.369,8.397 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.030"  points="5.286,6.647 6.847,6.647 6.847,5.297 8.419,5.297 "/>
+<polygon fill="#000000" stroke="none" stroke-width="0.030" points="5.136,6.647 5.336,6.547 5.286,6.647 5.336,6.747 "/>
+<polygon fill="none" stroke="#000000" stroke-width="0.030"  points="5.136,6.647 5.336,6.547 5.286,6.647 5.336,6.747 "/>
+<polygon fill="#000000" stroke="none" stroke-width="0.030" points="8.569,5.297 8.369,5.397 8.419,5.297 8.369,5.197 "/>
+<polygon fill="none" stroke="#000000" stroke-width="0.030"  points="8.569,5.297 8.369,5.397 8.419,5.297 8.369,5.197 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.030"  points="11.603,5.297 12.308,5.297 12.308,5.297 13.697,5.297 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.030"  points="11.603,8.497 12.803,8.497 12.803,8.497 13.703,8.497 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.030"  points="11.603,6.897 11.703,6.897 11.703,6.897 13.703,6.897 "/>
+<rect x="1.703" y="4.397" width="3.200" height="0.892" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="1.703" y="4.397" width="3.200" height="0.892" fill="none" stroke="#000000" stroke-width="0.010" />
+<text x="3.303" y="4.912"  fill="#000000" text-anchor="middle" font-size="0.28" font-family="DejaVu Sans" font-style="normal" font-weight="400">
+LINUX PC / RSBB</text>
+<rect x="2.403" y="6.397" width="2.400" height="1.000" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<path stroke="none" fill="#FFFFFF" d ="M 2.403,6.397 A 0.300,0.300 0 0,0 2.103,6.697 "/>
+<path stroke="none" fill="#FFFFFF" d ="M 5.103,6.697 A 0.300,0.300 0 0,0 4.803,6.397 "/>
+<rect x="2.103" y="6.697" width="3.000" height="0.400" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<path stroke="none" fill="#FFFFFF" d ="M 2.103,7.097 A 0.300,0.300 0 0,0 2.403,7.397 "/>
+<path stroke="none" fill="#FFFFFF" d ="M 4.803,7.397 A 0.300,0.300 0 0,0 5.103,7.097 "/>
+<line x1="2.403" y1="6.397" x2="4.803" y2="6.397" stroke="#000000" stroke-width="0.020" />
+<line x1="2.403" y1="7.397" x2="4.803" y2="7.397" stroke="#000000" stroke-width="0.020" />
+<path stroke="#000000" fill="none" stroke-width="0.020"  d ="M 2.403,6.397 A 0.300,0.300 0 0,0 2.103,6.697 "/>
+<path stroke="#000000" fill="none" stroke-width="0.020"  d ="M 5.103,6.697 A 0.300,0.300 0 0,0 4.803,6.397 "/>
+<line x1="2.103" y1="6.697" x2="2.103" y2="7.097" stroke="#000000" stroke-width="0.020" />
+<line x1="5.103" y1="6.697" x2="5.103" y2="7.097" stroke="#000000" stroke-width="0.020" />
+<path stroke="#000000" fill="none" stroke-width="0.020"  d ="M 2.103,7.097 A 0.300,0.300 0 0,0 2.403,7.397 "/>
+<path stroke="#000000" fill="none" stroke-width="0.020"  d ="M 4.803,7.397 A 0.300,0.300 0 0,0 5.103,7.097 "/>
+<text x="3.603" y="6.949"  fill="#000000" text-anchor="middle" font-size="0.21" font-family="DejaVu Sans" font-style="normal" font-weight="400">
+RSBB Core</text>
+<rect x="8.903" y="4.797" width="2.400" height="1.000" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<path stroke="none" fill="#FFFFFF" d ="M 8.903,4.797 A 0.300,0.300 0 0,0 8.603,5.097 "/>
+<path stroke="none" fill="#FFFFFF" d ="M 11.603,5.097 A 0.300,0.300 0 0,0 11.303,4.797 "/>
+<rect x="8.603" y="5.097" width="3.000" height="0.400" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<path stroke="none" fill="#FFFFFF" d ="M 8.603,5.497 A 0.300,0.300 0 0,0 8.903,5.797 "/>
+<path stroke="none" fill="#FFFFFF" d ="M 11.303,5.797 A 0.300,0.300 0 0,0 11.603,5.497 "/>
+<line x1="8.903" y1="4.797" x2="11.303" y2="4.797" stroke="#000000" stroke-width="0.020" />
+<line x1="8.903" y1="5.797" x2="11.303" y2="5.797" stroke="#000000" stroke-width="0.020" />
+<path stroke="#000000" fill="none" stroke-width="0.020"  d ="M 8.903,4.797 A 0.300,0.300 0 0,0 8.603,5.097 "/>
+<path stroke="#000000" fill="none" stroke-width="0.020"  d ="M 11.603,5.097 A 0.300,0.300 0 0,0 11.303,4.797 "/>
+<line x1="8.603" y1="5.097" x2="8.603" y2="5.497" stroke="#000000" stroke-width="0.020" />
+<line x1="11.603" y1="5.097" x2="11.603" y2="5.497" stroke="#000000" stroke-width="0.020" />
+<path stroke="#000000" fill="none" stroke-width="0.020"  d ="M 8.603,5.497 A 0.300,0.300 0 0,0 8.903,5.797 "/>
+<path stroke="#000000" fill="none" stroke-width="0.020"  d ="M 11.303,5.797 A 0.300,0.300 0 0,0 11.603,5.497 "/>
+<text x="10.103" y="5.349"  fill="#000000" text-anchor="middle" font-size="0.21" font-family="DejaVu Sans" font-style="normal" font-weight="400">
+RSBB Comm</text>
+<rect x="8.903" y="7.997" width="2.400" height="1.000" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<path stroke="none" fill="#FFFFFF" d ="M 8.903,7.997 A 0.300,0.300 0 0,0 8.603,8.297 "/>
+<path stroke="none" fill="#FFFFFF" d ="M 11.603,8.297 A 0.300,0.300 0 0,0 11.303,7.997 "/>
+<rect x="8.603" y="8.297" width="3.000" height="0.400" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<path stroke="none" fill="#FFFFFF" d ="M 8.603,8.697 A 0.300,0.300 0 0,0 8.903,8.997 "/>
+<path stroke="none" fill="#FFFFFF" d ="M 11.303,8.997 A 0.300,0.300 0 0,0 11.603,8.697 "/>
+<line x1="8.903" y1="7.997" x2="11.303" y2="7.997" stroke="#000000" stroke-width="0.020" />
+<line x1="8.903" y1="8.997" x2="11.303" y2="8.997" stroke="#000000" stroke-width="0.020" />
+<path stroke="#000000" fill="none" stroke-width="0.020"  d ="M 8.903,7.997 A 0.300,0.300 0 0,0 8.603,8.297 "/>
+<path stroke="#000000" fill="none" stroke-width="0.020"  d ="M 11.603,8.297 A 0.300,0.300 0 0,0 11.303,7.997 "/>
+<line x1="8.603" y1="8.297" x2="8.603" y2="8.697" stroke="#000000" stroke-width="0.020" />
+<line x1="11.603" y1="8.297" x2="11.603" y2="8.697" stroke="#000000" stroke-width="0.020" />
+<path stroke="#000000" fill="none" stroke-width="0.020"  d ="M 8.603,8.697 A 0.300,0.300 0 0,0 8.903,8.997 "/>
+<path stroke="#000000" fill="none" stroke-width="0.020"  d ="M 11.303,8.997 A 0.300,0.300 0 0,0 11.603,8.697 "/>
+<text x="10.103" y="8.549"  fill="#000000" text-anchor="middle" font-size="0.21" font-family="DejaVu Sans" font-style="normal" font-weight="400">
+MoCap Interface</text>
+<rect x="8.903" y="6.397" width="2.400" height="1.000" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<path stroke="none" fill="#FFFFFF" d ="M 8.903,6.397 A 0.300,0.300 0 0,0 8.603,6.697 "/>
+<path stroke="none" fill="#FFFFFF" d ="M 11.603,6.697 A 0.300,0.300 0 0,0 11.303,6.397 "/>
+<rect x="8.603" y="6.697" width="3.000" height="0.400" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<path stroke="none" fill="#FFFFFF" d ="M 8.603,7.097 A 0.300,0.300 0 0,0 8.903,7.397 "/>
+<path stroke="none" fill="#FFFFFF" d ="M 11.303,7.397 A 0.300,0.300 0 0,0 11.603,7.097 "/>
+<line x1="8.903" y1="6.397" x2="11.303" y2="6.397" stroke="#000000" stroke-width="0.020" />
+<line x1="8.903" y1="7.397" x2="11.303" y2="7.397" stroke="#000000" stroke-width="0.020" />
+<path stroke="#000000" fill="none" stroke-width="0.020"  d ="M 8.903,6.397 A 0.300,0.300 0 0,0 8.603,6.697 "/>
+<path stroke="#000000" fill="none" stroke-width="0.020"  d ="M 11.603,6.697 A 0.300,0.300 0 0,0 11.303,6.397 "/>
+<line x1="8.603" y1="6.697" x2="8.603" y2="7.097" stroke="#000000" stroke-width="0.020" />
+<line x1="11.603" y1="6.697" x2="11.603" y2="7.097" stroke="#000000" stroke-width="0.020" />
+<path stroke="#000000" fill="none" stroke-width="0.020"  d ="M 8.603,7.097 A 0.300,0.300 0 0,0 8.903,7.397 "/>
+<path stroke="#000000" fill="none" stroke-width="0.020"  d ="M 11.303,7.397 A 0.300,0.300 0 0,0 11.603,7.097 "/>
+<text x="10.103" y="6.949"  fill="#000000" text-anchor="middle" font-size="0.21" font-family="DejaVu Sans" font-style="normal" font-weight="400">
+HAD Interface</text>
+<rect x="13.703" y="4.797" width="3.000" height="1.000" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="13.703" y="4.797" width="3.000" height="1.000" fill="none" stroke="#000000" stroke-width="0.010" />
+<text x="15.203" y="5.031"  fill="#000000" text-anchor="middle" font-size="0.21" font-family="DejaVu Sans" font-style="normal" font-weight="400">
+eth0/wlan0</text>
+<text x="15.203" y="5.243"  fill="#000000" text-anchor="middle" font-size="0.21" font-family="DejaVu Sans" font-style="normal" font-weight="400">
+addr: 10.2.0.10</text>
+<text x="15.203" y="5.455"  fill="#000000" text-anchor="middle" font-size="0.21" font-family="DejaVu Sans" font-style="normal" font-weight="400">
+Bcast: 10.2.0.255</text>
+<text x="15.203" y="5.666"  fill="#000000" text-anchor="middle" font-size="0.21" font-family="DejaVu Sans" font-style="normal" font-weight="400">
+gateway: 10.2.0.1</text>
+<rect x="13.703" y="6.397" width="3.000" height="1.000" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="13.703" y="6.397" width="3.000" height="1.000" fill="none" stroke="#000000" stroke-width="0.010" />
+<text x="15.203" y="6.631"  fill="#000000" text-anchor="middle" font-size="0.21" font-family="DejaVu Sans" font-style="normal" font-weight="400">
+eth1</text>
+<text x="15.203" y="6.843"  fill="#000000" text-anchor="middle" font-size="0.21" font-family="DejaVu Sans" font-style="normal" font-weight="400">
+addr: 192.168.1.1</text>
+<text x="15.203" y="7.055"  fill="#000000" text-anchor="middle" font-size="0.21" font-family="DejaVu Sans" font-style="normal" font-weight="400">
+Bcast: 192.168.255.255</text>
+<text x="15.203" y="7.266"  fill="#000000" text-anchor="middle" font-size="0.21" font-family="DejaVu Sans" font-style="normal" font-weight="400">
+gateway: 0.0.0.0</text>
+<rect x="13.703" y="7.997" width="3.000" height="1.000" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="13.703" y="7.997" width="3.000" height="1.000" fill="none" stroke="#000000" stroke-width="0.010" />
+<text x="15.203" y="8.231"  fill="#000000" text-anchor="middle" font-size="0.21" font-family="DejaVu Sans" font-style="normal" font-weight="400">
+eth2</text>
+<text x="15.203" y="8.443"  fill="#000000" text-anchor="middle" font-size="0.21" font-family="DejaVu Sans" font-style="normal" font-weight="400">
+addr: 192.168.0.1</text>
+<text x="15.203" y="8.655"  fill="#000000" text-anchor="middle" font-size="0.21" font-family="DejaVu Sans" font-style="normal" font-weight="400">
+Bcast: 192.168.0.255</text>
+<text x="15.203" y="8.866"  fill="#000000" text-anchor="middle" font-size="0.21" font-family="DejaVu Sans" font-style="normal" font-weight="400">
+gateway: 0.0.0.0</text>
+<rect x="1.703" y="10.397" width="15.000" height="3.400" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="1.703" y="10.397" width="15.000" height="3.400" fill="none" stroke="#000000" stroke-width="0.010" />
+<polyline fill="none" stroke="#000000" stroke-width="0.030"  points="10.282,12.365 11.992,12.365 11.992,12.897 13.703,12.897 "/>
+<rect x="1.703" y="10.396" width="3.200" height="0.892" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="1.703" y="10.396" width="3.200" height="0.892" fill="none" stroke="#000000" stroke-width="0.010" />
+<text x="3.303" y="10.911"  fill="#000000" text-anchor="middle" font-size="0.28" font-family="sans" font-style="normal" font-weight="400">
+WINDOWS PC</text>
+<rect x="7.582" y="11.615" width="2.400" height="1.000" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<path stroke="none" fill="#FFFFFF" d ="M 7.582,11.615 A 0.300,0.300 0 0,0 7.282,11.915 "/>
+<path stroke="none" fill="#FFFFFF" d ="M 10.282,11.915 A 0.300,0.300 0 0,0 9.982,11.615 "/>
+<rect x="7.282" y="11.915" width="3.000" height="0.400" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<path stroke="none" fill="#FFFFFF" d ="M 7.282,12.315 A 0.300,0.300 0 0,0 7.582,12.615 "/>
+<path stroke="none" fill="#FFFFFF" d ="M 9.982,12.615 A 0.300,0.300 0 0,0 10.282,12.315 "/>
+<line x1="7.582" y1="11.615" x2="9.982" y2="11.615" stroke="#000000" stroke-width="0.020" />
+<line x1="7.582" y1="12.615" x2="9.982" y2="12.615" stroke="#000000" stroke-width="0.020" />
+<path stroke="#000000" fill="none" stroke-width="0.020"  d ="M 7.582,11.615 A 0.300,0.300 0 0,0 7.282,11.915 "/>
+<path stroke="#000000" fill="none" stroke-width="0.020"  d ="M 10.282,11.915 A 0.300,0.300 0 0,0 9.982,11.615 "/>
+<line x1="7.282" y1="11.915" x2="7.282" y2="12.315" stroke="#000000" stroke-width="0.020" />
+<line x1="10.282" y1="11.915" x2="10.282" y2="12.315" stroke="#000000" stroke-width="0.020" />
+<path stroke="#000000" fill="none" stroke-width="0.020"  d ="M 7.282,12.315 A 0.300,0.300 0 0,0 7.582,12.615 "/>
+<path stroke="#000000" fill="none" stroke-width="0.020"  d ="M 9.982,12.615 A 0.300,0.300 0 0,0 10.282,12.315 "/>
+<text x="8.782" y="12.061"  fill="#000000" text-anchor="middle" font-size="0.21" font-family="sans" font-style="normal" font-weight="400">
+MoCap Software</text>
+<text x="8.782" y="12.273"  fill="#000000" text-anchor="middle" font-size="0.21" font-family="sans" font-style="normal" font-weight="400">
+(Motive, Vicon Tracker, etc)</text>
+<rect x="13.703" y="12.397" width="3.000" height="1.000" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="13.703" y="12.397" width="3.000" height="1.000" fill="none" stroke="#000000" stroke-width="0.010" />
+<text x="15.203" y="12.843"  fill="#000000" text-anchor="middle" font-size="0.21" font-family="sans" font-style="normal" font-weight="400">
+eth2</text>
+<text x="15.203" y="13.055"  fill="#000000" text-anchor="middle" font-size="0.21" font-family="sans" font-style="normal" font-weight="400">
+set by software</text>
+<rect x="13.703" y="10.797" width="3.000" height="1.000" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="13.703" y="10.797" width="3.000" height="1.000" fill="none" stroke="#000000" stroke-width="0.010" />
+<text x="15.203" y="11.137"  fill="#000000" text-anchor="middle" font-size="0.21" font-family="sans" font-style="normal" font-weight="400">
+eth1</text>
+<text x="15.203" y="11.349"  fill="#000000" text-anchor="middle" font-size="0.21" font-family="sans" font-style="normal" font-weight="400">
+addr: 192.168.0.2</text>
+<text x="15.203" y="11.561"  fill="#000000" text-anchor="middle" font-size="0.21" font-family="sans" font-style="normal" font-weight="400">
+Bcast: 192.168.0.255</text>
+<polyline fill="none" stroke="#000000" stroke-width="0.030"  points="10.282,11.865 11.992,11.865 11.992,11.297 13.703,11.297 "/>
+</svg>

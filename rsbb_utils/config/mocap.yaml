@@ -1,0 +1,21 @@
+rigid_bodies:
+#  '1':
+#    pose: robot_markerset/pose
+#    child_frame_id: robot_markerset
+#    parent_frame_id: world
+#  '2':
+#    pose: robot_markerset/pose
+#    child_frame_id: robot_markerset
+#    parent_frame_id: world
+  '3':
+    pose: robot_markerset/pose
+    child_frame_id: robot_markerset
+    parent_frame_id: world
+  '4':
+    pose: robot_markerset/pose
+    child_frame_id: robot_markerset
+    parent_frame_id: world
+#  '5':
+#    pose: robot_markerset/pose
+#    child_frame_id: robot_markerset
+#    parent_frame_id: world

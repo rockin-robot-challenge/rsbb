@@ -1,0 +1,8 @@
+string score
+RefBoxState refbox_state
+string benchmark_code
+string team
+string robot
+uint32 run
+---
+bool success

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<package>
+  <name>rsbb_etc</name>
+  <version>0.1.0</version>
+  <description>The rsbb_etc package</description>
+  <maintainer email="enrico.piazza@polimi.it">Enrico Piazza</maintainer> <!-- probably not anymore -->
+  <license>LGPLv3</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+</package>

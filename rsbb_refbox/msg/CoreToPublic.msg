@@ -1,0 +1,3 @@
+string clock
+
+ScheduleInfo[] schedule

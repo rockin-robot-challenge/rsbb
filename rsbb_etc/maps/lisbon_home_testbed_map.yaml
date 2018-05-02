@@ -1,0 +1,16 @@
+# Map image file
+image: lisbon_home_testbed_map.png
+
+# Resolution of the map, meters / pixel
+resolution: 0.01
+
+# The 2-D pose of the lower-left pixel in the map
+origin: [-4.03, -4.1, 0]
+
+# Negate white/black free/occupied semantics?
+negate: 0
+
+# Occupied/free pixel thresholds
+occupied_thresh: 0.65
+free_thresh: 0.196
+

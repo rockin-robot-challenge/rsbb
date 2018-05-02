@@ -1,0 +1,28 @@
+<launch>
+
+	<group ns="rsbb">
+	
+		<node pkg="tf"
+			type="static_transform_publisher"
+			name="testbed_map_bc"
+			args="0 0 0 0 0 0 testbed_origin map 100"
+		/>
+		
+		<node name="map_server"
+			pkg="map_server"
+			type="map_server"
+			args="$(find rsbb_etc)/maps/AIRLab_map.yaml"
+		/>
+
+		<node name="mocap_node"
+			type="mocap_node"
+			pkg="rsbb_mocap_optitrack"
+			output="screen"
+			respawn="false"
+			launch-prefix=""
+			required="true">
+			<rosparam file="$(find rsbb_etc)/config/mocap_optitrack.yaml" command="load" />
+		</node>
+
+	</group>      
+</launch>

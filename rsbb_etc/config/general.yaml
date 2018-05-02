@@ -1,0 +1,19 @@
+rsbb_broadcast_address: "10.2.0.255"
+rsbb_port: 6666
+generate_schedule: true
+base_results_directory: "~/rsbb_output/"
+base_record_directory: "~/rsbb_output/"
+general_record_list:
+  - "map"
+  - "map_metadata"
+  - "current_benchmark_result"
+  - "bmbox/bmbox_state"
+  - "bmbox/refbox_state"
+  - "/devices/state"
+  - "/devices/bell"
+  - "/core/to_gui"
+  - "/core/to_public"
+  - "/timeout"
+  - "/rosout"
+  - "/tf"
+

@@ -1,0 +1,168 @@
+<library path="lib/librqt_roah_rsbb">
+
+  <class name="rqt_roah_rsbb/ActiveRobots" type="rqt_roah_rsbb::ActiveRobots" base_class_type="rqt_gui_cpp::Plugin">
+    <description>
+      RoAH RSBB active robots list display.
+    </description>
+    <qtgui>
+      <group>
+        <label>RoAH RSBB</label>
+        <icon type="theme">folder</icon>
+      </group>
+      <label>Active Robots</label>
+      <icon type="theme">edit-copy</icon>
+      <statustip>List of the active robots detected</statustip>
+    </qtgui>
+  </class>
+
+  <class name="rqt_roah_rsbb/BenchmarkControl" type="rqt_roah_rsbb::BenchmarkControl" base_class_type="rqt_gui_cpp::Plugin">
+    <description>
+      RoAH RSBB control GUI.
+    </description>
+    <qtgui>
+      <group>
+        <label>RoAH RSBB</label>
+        <icon type="theme">folder</icon>
+      </group>
+      <label>Benchmark Control</label>
+      <icon type="theme">media-playback-start</icon>
+      <statustip>Control the benchmark execution</statustip>
+    </qtgui>
+  </class>
+
+  <class name="rqt_roah_rsbb/BenchmarkErrorsAndWarningMessages" type="rqt_roah_rsbb::BenchmarkErrorsAndWarningMessages" base_class_type="rqt_gui_cpp::Plugin">
+    <description>
+      RoAH RSBB benchmark errors and warning messages GUI.
+    </description>
+    <qtgui>
+      <group>
+        <label>RoAH RSBB</label>
+        <icon type="theme">utilities-system-monitor</icon>
+      </group>
+      <label>Errors and Warning Messages</label>
+      <icon type="theme">utilities-system-monitor</icon>
+      <statustip>Shows errors and warning messages during the execution of the benchmarks</statustip>
+    </qtgui>
+  </class>
+  
+  <class name="rqt_roah_rsbb/CoreStatus" type="rqt_roah_rsbb::CoreStatus" base_class_type="rqt_gui_cpp::Plugin">
+    <description>
+      RoAH RSBB core status display.
+    </description>
+    <qtgui>
+      <group>
+        <label>RoAH RSBB</label>
+        <icon type="theme">folder</icon>
+      </group>
+      <label>Core Status</label>
+      <icon type="theme">utilities-system-monitor</icon>
+      <statustip>Current status of the core component</statustip>
+    </qtgui>
+  </class>
+
+  <class name="rqt_roah_rsbb/CurrentScore" type="rqt_roah_rsbb::CurrentScore" base_class_type="rqt_gui_cpp::Plugin">
+    <description>
+      RoAH RSBB current score display GUI.
+    </description>
+    <qtgui>
+      <group>
+        <label>RoAH RSBB</label>
+        <icon type="theme">folder</icon>
+      </group>
+      <label>Current Score</label>
+      <icon type="theme">utilities-system-monitor</icon>
+      <statustip>Display RSBB current score</statustip>
+    </qtgui>
+  </class>
+
+  <class name="rqt_roah_rsbb/LogDisplay" type="rqt_roah_rsbb::LogDisplay" base_class_type="rqt_gui_cpp::Plugin">
+    <description>
+      RoAH RSBB log display GUI.
+    </description>
+    <qtgui>
+      <group>
+        <label>RoAH RSBB</label>
+        <icon type="theme">folder</icon>
+      </group>
+      <label>Log Display</label>
+      <icon type="theme">utilities-system-monitor</icon>
+      <statustip>Display RSBB log</statustip>
+    </qtgui>
+  </class>
+
+  <class name="rqt_roah_rsbb/ManualOperation" type="rqt_roah_rsbb::ManualOperation" base_class_type="rqt_gui_cpp::Plugin">
+    <description>
+      RoAH RSBB manual operation GUI.
+    </description>
+    <qtgui>
+      <group>
+        <label>RoAH RSBB</label>
+        <icon type="theme">folder</icon>
+      </group>
+      <label>Manual Operation</label>
+      <icon type="theme">media-playback-start</icon>
+      <statustip>Execute manual operation</statustip>
+    </qtgui>
+  </class>
+
+  <class name="rqt_roah_rsbb/OmfSwitches" type="rqt_roah_rsbb::OmfSwitches" base_class_type="rqt_gui_cpp::Plugin">
+    <description>
+      RoAH RSBB OMF switches operation GUI.
+    </description>
+    <qtgui>
+      <group>
+        <label>RoAH RSBB</label>
+        <icon type="theme">folder</icon>
+      </group>
+      <label>OMF Switches</label>
+      <icon type="theme">media-playback-start</icon>
+      <statustip>Input switches changed</statustip>
+    </qtgui>
+  </class>
+
+  <class name="rqt_roah_rsbb/OnlineData" type="rqt_roah_rsbb::OnlineData" base_class_type="rqt_gui_cpp::Plugin">
+    <description>
+      RoAH RSBB online data display GUI.
+    </description>
+    <qtgui>
+      <group>
+        <label>RoAH RSBB</label>
+        <icon type="theme">folder</icon>
+      </group>
+      <label>Online Data Display</label>
+      <icon type="theme">utilities-system-monitor</icon>
+      <statustip>Display online data received from the robot</statustip>
+    </qtgui>
+  </class>
+
+  <class name="rqt_roah_rsbb/Scoring" type="rqt_roah_rsbb::Scoring" base_class_type="rqt_gui_cpp::Plugin">
+    <description>
+      RoAH RSBB referee scoring list.
+    </description>
+    <qtgui>
+      <group>
+        <label>RoAH RSBB</label>
+        <icon type="theme">folder</icon>
+      </group>
+      <label>Scoring</label>
+      <icon type="theme">edit-copy</icon>
+      <statustip>List scoring items to be marked by the referee</statustip>
+    </qtgui>
+  </class>
+
+  <class name="rqt_roah_rsbb/TabletStatus" type="rqt_roah_rsbb::TabletStatus" base_class_type="rqt_gui_cpp::Plugin">
+    <description>
+      RoAH RSBB tablet status display.
+    </description>
+    <qtgui>
+      <group>
+        <label>RoAH RSBB</label>
+        <icon type="theme">folder</icon>
+      </group>
+      <label>Tablet Status</label>
+      <icon type="theme">utilities-system-monitor</icon>
+      <statustip>Current status of the tablet</statustip>
+    </qtgui>
+  </class>
+
+</library>

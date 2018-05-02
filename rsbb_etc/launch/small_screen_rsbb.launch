@@ -1,0 +1,54 @@
+<launch>
+  
+  <group ns="rsbb">
+    
+    <node name="bmbox" pkg="rsbb_bmbox" type="benchmark_script_server.py" respawn="true" output="screen">
+      <rosparam file="$(find rsbb_etc)/config/general.yaml" command="load" />
+      <rosparam file="$(find rsbb_etc)/config/benchmarks_description.yaml" command="load" />
+      <param name="resources_directory" type="string" value="$(find rsbb_etc)/"/>
+      <param name="benchmark_configs_directory" type="string" value="$(find rsbb_bmbox)/scripts/benchmark_configs/"/>
+    </node>
+    
+    <node name="record_server" pkg="rsbb_record_server" type="rsbb_record_server" respawn="true" output="screen">
+      <rosparam file="$(find rsbb_etc)/config/general.yaml" command="load" />
+    </node>
+    
+    <node name="roah_rsbb_sounds" pkg="roah_rsbb" type="sounds" respawn="true">
+      <param name="bell_ring_command" type="string" value="mplayer $(find rsbb_etc)/audio/bell.mp3"/>
+      <param name="timeout_ring_command" type="string" value="mplayer $(find rsbb_etc)/audio/timeout.mp3"/>
+    </node>
+    
+    <!--
+    <include file="$(find roah_devices)/launch/run_real.launch">
+      <arg name="smartif_host" default="192.168.1.56"/>
+    </include>
+    -->
+    
+    <node name="refbox" pkg="roah_rsbb" type="core" respawn="true" output="screen" launch-prefix="xterm -e">
+      <rosparam file="$(find rsbb_etc)/config/general.yaml" command="load" />
+      <param name="benchmarks_file" type="string" value="$(find rsbb_etc)/config/benchmarks_description.yaml"/>
+      <param name="schedule_file" type="string" value="$(find rsbb_etc)/config/schedule.yaml"/>
+      <param name="passwords_file" type="string" value="$(find rsbb_etc)/config/passwords.yaml"/>
+      <param name="teams_list_file" type="string" value="$(find rsbb_etc)/config/teams_list.yaml"/>
+      <param name="log_dir" type="string" value="$(find roah_rsbb)/log"/>
+    </node>
+    
+    <node name="roah_rsbb_core_shutdown" pkg="roah_rsbb" type="shutdown_service" required="true"/>
+    
+  </group>
+  
+  
+  
+  <group ns="$(anon roah_rsbb_client)">
+    
+    <param name="current_zone" type="string" value="TestingTeam"/>
+    <node pkg="rqt_gui" type="rqt_gui" name="roah_rsbb_gui" respawn="true" args=" --clear-config --perspective-file $(find roah_rsbb)/roah_rsbb_new_small.perspective" output="screen"/>
+    <node pkg="roah_rsbb" type="shutdown_service" name="roah_rsbb_shutdown" required="true"/>
+    
+  </group>
+  
+    <!--
+  <include file="$(find roah_rsbb)/launch/roah_rsbb_client_dev.launch"/>
+    -->
+  
+</launch>

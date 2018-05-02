@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="16cm" height="9cm" viewBox="-15 66 307 170" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="109.595" y="66.9624" width="181.574" height="169.289"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 0.2; stroke: #000000" x="109.595" y="66.9624" width="181.574" height="169.289"/>
+    <text font-size="5.64444" style="fill: #000000;text-anchor:middle;font-family:DejaVu Sans;font-style:normal;font-weight:normal" x="200.383" y="153.329">
+      <tspan x="200.383" y="153.329"></tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="109.595" y="66.9624" width="64" height="7.34893"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 0.2; stroke: #000000" x="109.595" y="66.9624" width="64" height="7.34893"/>
+    <text font-size="4.51556" style="fill: #000000;text-anchor:middle;font-family:DejaVu Sans;font-style:normal;font-weight:normal" x="141.595" y="72.0146">
+      <tspan x="141.595" y="72.0146">RSBB</tspan>
+    </text>
+  </g>
+  <g>
+    <g>
+      <rect style="fill: #ffffff" x="120.453" y="113.151" width="159.986" height="36.4046"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 0.2; stroke: #000000" x="120.453" y="113.151" width="159.986" height="36.4046"/>
+      <text font-size="5.64444" style="fill: #000000;text-anchor:middle;font-family:DejaVu Sans;font-style:normal;font-weight:normal" x="200.445" y="133.076">
+        <tspan x="200.445" y="133.076"></tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #ffffff" x="216.438" y="113.151" width="64" height="5.84444"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 0.2; stroke: #000000" x="216.438" y="113.151" width="64" height="5.84444"/>
+      <text font-size="4.51556" style="fill: #000000;text-anchor:middle;font-family:DejaVu Sans;font-style:normal;font-weight:normal" x="248.438" y="117.451">
+        <tspan x="248.438" y="117.451">RefBox</tspan>
+      </text>
+    </g>
+  </g>
+  <g>
+    <g>
+      <rect style="fill: #ffffff" x="120.453" y="154.522" width="159.986" height="36.7454"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 0.2; stroke: #000000" x="120.453" y="154.522" width="159.986" height="36.7454"/>
+      <text font-size="5.64444" style="fill: #000000;text-anchor:middle;font-family:DejaVu Sans;font-style:normal;font-weight:normal" x="200.445" y="174.617">
+        <tspan x="200.445" y="174.617"></tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #ffffff" x="216.438" y="154.522" width="64" height="5.84444"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 0.2; stroke: #000000" x="216.438" y="154.522" width="64" height="5.84444"/>
+      <text font-size="4.51556" style="fill: #000000;text-anchor:middle;font-family:DejaVu Sans;font-style:normal;font-weight:normal" x="248.438" y="158.822">
+        <tspan x="248.438" y="158.822">BmBox</tspan>
+      </text>
+    </g>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="135.908" y="124.79" width="48" height="20"/>
+    <path style="fill: #ffffff" d="M 135.908,124.79 A 6,6 0 0 0 129.908,130.79 L 135.908,130.79 z"/>
+    <path style="fill: #ffffff" d="M 189.908,130.79 A 6,6 0 0 0 183.908,124.79 L 183.908,130.79 z"/>
+    <rect style="fill: #ffffff" x="129.908" y="130.79" width="60" height="8"/>
+    <path style="fill: #ffffff" d="M 129.908,138.79 A 6,6 0 0 0 135.908,144.79 L 135.908,138.79 z"/>
+    <path style="fill: #ffffff" d="M 183.908,144.79 A 6,6 0 0 0 189.908,138.79 L 183.908,138.79 z"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.4; stroke: #000000" x1="135.908" y1="124.79" x2="183.908" y2="124.79"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.4; stroke: #000000" x1="135.908" y1="144.79" x2="183.908" y2="144.79"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 0.4; stroke: #000000" d="M 135.908,124.79 A 6,6 0 0 0 129.908,130.79"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 0.4; stroke: #000000" d="M 189.908,130.79 A 6,6 0 0 0 183.908,124.79"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.4; stroke: #000000" x1="129.908" y1="130.79" x2="129.908" y2="138.79"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.4; stroke: #000000" x1="189.908" y1="130.79" x2="189.908" y2="138.79"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 0.4; stroke: #000000" d="M 129.908,138.79 A 6,6 0 0 0 135.908,144.79"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 0.4; stroke: #000000" d="M 183.908,144.79 A 6,6 0 0 0 189.908,138.79"/>
+    <text font-size="4.51556" style="fill: #000000;text-anchor:middle;font-family:DejaVu Sans;font-style:normal;font-weight:normal" x="159.908" y="136.168">
+      <tspan x="159.908" y="136.168">Core</tspan>
+    </text>
+  </g>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.6; stroke: #000000" points="129.908,134.79 87.6281,134.79 87.6281,175.93 45.3486,175.93 "/>
+  <g>
+    <rect style="fill: #ffffff" x="135.908" y="207.07" width="48" height="20"/>
+    <path style="fill: #ffffff" d="M 135.908,207.07 A 6,6 0 0 0 129.908,213.07 L 135.908,213.07 z"/>
+    <path style="fill: #ffffff" d="M 189.908,213.07 A 6,6 0 0 0 183.908,207.07 L 183.908,213.07 z"/>
+    <rect style="fill: #ffffff" x="129.908" y="213.07" width="60" height="8"/>
+    <path style="fill: #ffffff" d="M 129.908,221.07 A 6,6 0 0 0 135.908,227.07 L 135.908,221.07 z"/>
+    <path style="fill: #ffffff" d="M 183.908,227.07 A 6,6 0 0 0 189.908,221.07 L 183.908,221.07 z"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.4; stroke: #000000" x1="135.908" y1="207.07" x2="183.908" y2="207.07"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.4; stroke: #000000" x1="135.908" y1="227.07" x2="183.908" y2="227.07"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 0.4; stroke: #000000" d="M 135.908,207.07 A 6,6 0 0 0 129.908,213.07"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 0.4; stroke: #000000" d="M 189.908,213.07 A 6,6 0 0 0 183.908,207.07"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.4; stroke: #000000" x1="129.908" y1="213.07" x2="129.908" y2="221.07"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.4; stroke: #000000" x1="189.908" y1="213.07" x2="189.908" y2="221.07"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 0.4; stroke: #000000" d="M 129.908,221.07 A 6,6 0 0 0 135.908,227.07"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 0.4; stroke: #000000" d="M 183.908,227.07 A 6,6 0 0 0 189.908,221.07"/>
+    <text font-size="4.51556" style="fill: #000000;text-anchor:middle;font-family:DejaVu Sans;font-style:normal;font-weight:normal" x="159.908" y="218.448">
+      <tspan x="159.908" y="218.448">MoCap Interface</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-14.6514" y="165.93" width="60" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 0.2; stroke: #000000" x="-14.6514" y="165.93" width="60" height="20"/>
+    <text font-size="4.51556" style="fill: #000000;text-anchor:middle;font-family:DejaVu Sans;font-style:normal;font-weight:normal" x="15.3486" y="177.308">
+      <tspan x="15.3486" y="177.308">Robot</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-14.6514" y="124.79" width="60" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 0.2; stroke: #000000" x="-14.6514" y="124.79" width="60" height="20"/>
+    <text font-size="4.51556" style="fill: #000000;text-anchor:middle;font-family:DejaVu Sans;font-style:normal;font-weight:normal" x="15.3486" y="136.168">
+      <tspan x="15.3486" y="136.168">Tablet</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-14.6514" y="83.6498" width="60" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 0.2; stroke: #000000" x="-14.6514" y="83.6498" width="60" height="20"/>
+    <text font-size="4.51556" style="fill: #000000;text-anchor:middle;font-family:DejaVu Sans;font-style:normal;font-weight:normal" x="15.3486" y="95.0276">
+      <tspan x="15.3486" y="95.0276">HADs</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-14.6514" y="207.07" width="60" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 0.2; stroke: #000000" x="-14.6514" y="207.07" width="60" height="20"/>
+    <text font-size="4.51556" style="fill: #000000;text-anchor:middle;font-family:DejaVu Sans;font-style:normal;font-weight:normal" x="15.3486" y="218.448">
+      <tspan x="15.3486" y="218.448">MoCap</tspan>
+    </text>
+  </g>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.6; stroke: #000000" points="129.908,134.79 129.608,134.79 45.6486,134.79 45.3486,134.79 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.6; stroke: #000000" points="129.908,217.07 129.608,217.07 45.6486,217.07 45.3486,217.07 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.6; stroke: #000000" points="129.908,93.6498 129.608,93.6498 45.6486,93.6498 45.3486,93.6498 "/>
+  <g>
+    <rect style="fill: #ffffff" x="135.908" y="83.6498" width="48" height="20"/>
+    <path style="fill: #ffffff" d="M 135.908,83.6498 A 6,6 0 0 0 129.908,89.6498 L 135.908,89.6498 z"/>
+    <path style="fill: #ffffff" d="M 189.908,89.6498 A 6,6 0 0 0 183.908,83.6498 L 183.908,89.6498 z"/>
+    <rect style="fill: #ffffff" x="129.908" y="89.6498" width="60" height="8"/>
+    <path style="fill: #ffffff" d="M 129.908,97.6498 A 6,6 0 0 0 135.908,103.65 L 135.908,97.6498 z"/>
+    <path style="fill: #ffffff" d="M 183.908,103.65 A 6,6 0 0 0 189.908,97.6498 L 183.908,97.6498 z"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.4; stroke: #000000" x1="135.908" y1="83.6498" x2="183.908" y2="83.6498"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.4; stroke: #000000" x1="135.908" y1="103.65" x2="183.908" y2="103.65"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 0.4; stroke: #000000" d="M 135.908,83.6498 A 6,6 0 0 0 129.908,89.6498"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 0.4; stroke: #000000" d="M 189.908,89.6498 A 6,6 0 0 0 183.908,83.6498"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.4; stroke: #000000" x1="129.908" y1="89.6498" x2="129.908" y2="97.6498"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.4; stroke: #000000" x1="189.908" y1="89.6498" x2="189.908" y2="97.6498"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 0.4; stroke: #000000" d="M 129.908,97.6498 A 6,6 0 0 0 135.908,103.65"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 0.4; stroke: #000000" d="M 183.908,103.65 A 6,6 0 0 0 189.908,97.6498"/>
+    <text font-size="4.51556" style="fill: #000000;text-anchor:middle;font-family:DejaVu Sans;font-style:normal;font-weight:normal" x="159.908" y="95.0276">
+      <tspan x="159.908" y="95.0276">HAD Interface</tspan>
+    </text>
+  </g>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.6; stroke: #000000" points="159.908,103.65 159.908,103.95 159.908,124.49 159.908,124.79 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.6; stroke: #000000" points="240.797,185.93 240.797,196.5 159.908,196.5 159.908,207.07 "/>
+  <g>
+    <rect style="fill: #ffffff" x="135.908" y="165.93" width="48" height="20"/>
+    <path style="fill: #ffffff" d="M 135.908,165.93 A 6,6 0 0 0 129.908,171.93 L 135.908,171.93 z"/>
+    <path style="fill: #ffffff" d="M 189.908,171.93 A 6,6 0 0 0 183.908,165.93 L 183.908,171.93 z"/>
+    <rect style="fill: #ffffff" x="129.908" y="171.93" width="60" height="8"/>
+    <path style="fill: #ffffff" d="M 129.908,179.93 A 6,6 0 0 0 135.908,185.93 L 135.908,179.93 z"/>
+    <path style="fill: #ffffff" d="M 183.908,185.93 A 6,6 0 0 0 189.908,179.93 L 183.908,179.93 z"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.4; stroke: #000000" x1="135.908" y1="165.93" x2="183.908" y2="165.93"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.4; stroke: #000000" x1="135.908" y1="185.93" x2="183.908" y2="185.93"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 0.4; stroke: #000000" d="M 135.908,165.93 A 6,6 0 0 0 129.908,171.93"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 0.4; stroke: #000000" d="M 189.908,171.93 A 6,6 0 0 0 183.908,165.93"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.4; stroke: #000000" x1="129.908" y1="171.93" x2="129.908" y2="179.93"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.4; stroke: #000000" x1="189.908" y1="171.93" x2="189.908" y2="179.93"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 0.4; stroke: #000000" d="M 129.908,179.93 A 6,6 0 0 0 135.908,185.93"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 0.4; stroke: #000000" d="M 183.908,185.93 A 6,6 0 0 0 189.908,179.93"/>
+    <text font-size="4.51556" style="fill: #000000;text-anchor:middle;font-family:DejaVu Sans;font-style:normal;font-weight:normal" x="159.908" y="177.308">
+      <tspan x="159.908" y="177.308">Benchmark Script Server</tspan>
+    </text>
+  </g>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.6; stroke: #000000" points="159.908,144.79 159.908,155.36 159.908,155.36 159.908,165.93 "/>
+  <g>
+    <rect style="fill: #ffffff" x="216.722" y="124.79" width="48" height="20"/>
+    <path style="fill: #ffffff" d="M 216.722,124.79 A 6,6 0 0 0 210.722,130.79 L 216.722,130.79 z"/>
+    <path style="fill: #ffffff" d="M 270.722,130.79 A 6,6 0 0 0 264.722,124.79 L 264.722,130.79 z"/>
+    <rect style="fill: #ffffff" x="210.722" y="130.79" width="60" height="8"/>
+    <path style="fill: #ffffff" d="M 210.722,138.79 A 6,6 0 0 0 216.722,144.79 L 216.722,138.79 z"/>
+    <path style="fill: #ffffff" d="M 264.722,144.79 A 6,6 0 0 0 270.722,138.79 L 264.722,138.79 z"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.4; stroke: #000000" x1="216.722" y1="124.79" x2="264.722" y2="124.79"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.4; stroke: #000000" x1="216.722" y1="144.79" x2="264.722" y2="144.79"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 0.4; stroke: #000000" d="M 216.722,124.79 A 6,6 0 0 0 210.722,130.79"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 0.4; stroke: #000000" d="M 270.722,130.79 A 6,6 0 0 0 264.722,124.79"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.4; stroke: #000000" x1="210.722" y1="130.79" x2="210.722" y2="138.79"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.4; stroke: #000000" x1="270.722" y1="130.79" x2="270.722" y2="138.79"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 0.4; stroke: #000000" d="M 210.722,138.79 A 6,6 0 0 0 216.722,144.79"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 0.4; stroke: #000000" d="M 264.722,144.79 A 6,6 0 0 0 270.722,138.79"/>
+    <text font-size="4.51556" style="fill: #000000;text-anchor:middle;font-family:DejaVu Sans;font-style:normal;font-weight:normal" x="240.722" y="136.168">
+      <tspan x="240.722" y="136.168">Referee Interface</tspan>
+    </text>
+  </g>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.6; stroke: #000000" points="189.908,134.79 190.208,134.79 210.422,134.79 210.722,134.79 "/>
+  <text font-size="4.51556" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="56.3496" y="127.4">
+    <tspan x="56.3496" y="127.4">Protobuf</tspan>
+    <tspan x="56.3496" y="133.044">communication</tspan>
+  </text>
+  <text font-size="4.51556" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="56.3496" y="85.205">
+    <tspan x="56.3496" y="85.205">SMARTIF / OpenHAB</tspan>
+    <tspan x="56.3496" y="90.8494">communication</tspan>
+  </text>
+  <text font-size="4.51556" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="56.3496" y="207.872">
+    <tspan x="56.3496" y="207.872">Proprietary</tspan>
+    <tspan x="56.3496" y="213.516">communication / VRPN</tspan>
+  </text>
+  <g>
+    <rect style="fill: #ffffff" x="216.722" y="165.93" width="48.15" height="20"/>
+    <path style="fill: #ffffff" d="M 216.722,165.93 A 6,6 0 0 0 210.722,171.93 L 216.722,171.93 z"/>
+    <path style="fill: #ffffff" d="M 270.872,171.93 A 6,6 0 0 0 264.872,165.93 L 264.872,171.93 z"/>
+    <rect style="fill: #ffffff" x="210.722" y="171.93" width="60.15" height="8"/>
+    <path style="fill: #ffffff" d="M 210.722,179.93 A 6,6 0 0 0 216.722,185.93 L 216.722,179.93 z"/>
+    <path style="fill: #ffffff" d="M 264.872,185.93 A 6,6 0 0 0 270.872,179.93 L 264.872,179.93 z"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.4; stroke: #000000" x1="216.722" y1="165.93" x2="264.872" y2="165.93"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.4; stroke: #000000" x1="216.722" y1="185.93" x2="264.872" y2="185.93"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 0.4; stroke: #000000" d="M 216.722,165.93 A 6,6 0 0 0 210.722,171.93"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 0.4; stroke: #000000" d="M 270.872,171.93 A 6,6 0 0 0 264.872,165.93"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.4; stroke: #000000" x1="210.722" y1="171.93" x2="210.722" y2="179.93"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.4; stroke: #000000" x1="270.872" y1="171.93" x2="270.872" y2="179.93"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 0.4; stroke: #000000" d="M 210.722,179.93 A 6,6 0 0 0 216.722,185.93"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 0.4; stroke: #000000" d="M 264.872,185.93 A 6,6 0 0 0 270.872,179.93"/>
+    <text font-size="4.51556" style="fill: #000000;text-anchor:middle;font-family:DejaVu Sans;font-style:normal;font-weight:normal" x="240.797" y="177.308">
+      <tspan x="240.797" y="177.308">Benchmark Script</tspan>
+    </text>
+  </g>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.6; stroke: #000000" points="174.908,144.79 174.908,162.915 240.797,162.915 240.797,165.93 "/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 0.6; stroke-dasharray: 2; stroke: #000000" points="189.908,175.93 190.208,175.93 210.422,175.93 210.722,175.93 "/>
+</svg>

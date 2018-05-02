@@ -1,0 +1,5 @@
+string goal_result
+bool goal_timeout
+RefBoxState refbox_state
+---
+bool result

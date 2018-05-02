@@ -1,0 +1,4 @@
+string manual_operation_result
+RefBoxState refbox_state
+---
+bool result

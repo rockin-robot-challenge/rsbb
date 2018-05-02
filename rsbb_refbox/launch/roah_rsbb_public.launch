@@ -1,0 +1,7 @@
+<launch>
+
+  <group ns="$(anon roah_rsbb_public)">
+    <node pkg="roah_rsbb" type="public" name="roah_rsbb_public" required="true"/>
+  </group>
+
+</launch>

@@ -1,0 +1,45 @@
+<launch>
+
+	<group ns="rsbb">
+		<node pkg="tf"
+			type="static_transform_publisher"
+			name="world_map_bc"
+			args="0 0 0 0 0 0 world map 100"
+		/>
+		
+		<node name="map_server"
+			pkg="map_server"
+			type="map_server"
+			args="$(find rsbb_etc)/maps/AIRLab_map.yaml"
+		/>
+
+		<node name="mocap_node"
+			type="mocap_node"
+			pkg="rsbb_mocap_optitrack" 
+			respawn="false"
+			launch-prefix=""
+			required="true">
+			<rosparam file="$(find rsbb_etc)/config/mocap_optitrack.yaml" command="load" />
+		</node>
+
+		<node pkg="rosbag"
+			type="record"
+			name="log_mocap"
+			args="record -o /home/erl/logs/log_mocap
+				--split --duration=1h
+				/rsbb/map
+				/rsbb/map_metadata
+				/rsbb/robot_markerset/pose
+				/rsbb/robot_markerset/pose2d
+				/rsbb/actor_markerset/pose
+				/rsbb/actor_markerset/pose2d
+				/rsbb/table_origin/pose
+				/rsbb/table_origin/pose2d
+				/rsbb/positioner_origin/pose
+				/rsbb/positioner_origin/pose2d
+				/tf
+				/rosout"
+		/>
+
+	</group>      
+</launch>

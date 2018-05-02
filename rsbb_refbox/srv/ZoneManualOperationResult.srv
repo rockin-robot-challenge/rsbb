@@ -1,0 +1,4 @@
+string zone
+string manual_operation_result
+---
+bool success

@@ -1,0 +1,11 @@
+<launch>
+  
+  <group ns="rsbb">
+    
+    <node name="object_transform_acquirer_node" pkg="rsbb_utils" type="fbm1_object_transform_acquirer.py" output="screen">
+      <param name="resources_directory" type="string" value="$(find rsbb_etc)/"/>
+    </node>
+    
+  </group>
+  
+</launch>

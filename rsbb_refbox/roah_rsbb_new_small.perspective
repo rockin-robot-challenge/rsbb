@@ -1,0 +1,300 @@
+{
+  "keys": {}, 
+  "groups": {
+    "pluginmanager": {
+      "keys": {
+        "running-plugins": {
+          "type": "repr", 
+          "repr": "{u'rqt_roah_rsbb/CurrentScore': [1], u'rqt_roah_rsbb/ActiveRobots': [1], u'rqt_roah_rsbb/BenchmarkControl': [1], u'rqt_roah_devices/DevicesControl': [1], u'rqt_roah_rsbb/TabletStatus': [1], u'rqt_roah_rsbb/ManualOperation': [1], u'rqt_roah_rsbb/Scoring': [1], u'rqt_roah_rsbb/OnlineData': [1], u'rqt_roah_rsbb/LogDisplay': [1], u'rqt_roah_rsbb/CoreStatus': [1], u'rqt_roah_rsbb/BenchmarkErrorsAndWarningMessages': [1]}"
+        }
+      }, 
+      "groups": {
+        "plugin__rqt_roah_rsbb__BenchmarkControl__1": {
+          "keys": {}, 
+          "groups": {
+            "dock_widget__BenchmarkControl": {
+              "keys": {
+                "dockable": {
+                  "type": "repr", 
+                  "repr": "True"
+                }, 
+                "parent": {
+                  "type": "repr", 
+                  "repr": "None"
+                }, 
+                "dock_widget_title": {
+                  "type": "repr", 
+                  "repr": "u'Benchmark Control'"
+                }
+              }, 
+              "groups": {}
+            }
+          }
+        }, 
+        "plugin__rqt_roah_rsbb__OnlineData__1": {
+          "keys": {}, 
+          "groups": {
+            "dock_widget__OnlineData": {
+              "keys": {
+                "dockable": {
+                  "type": "repr", 
+                  "repr": "True"
+                }, 
+                "parent": {
+                  "type": "repr", 
+                  "repr": "None"
+                }, 
+                "dock_widget_title": {
+                  "type": "repr", 
+                  "repr": "u'Online Data'"
+                }
+              }, 
+              "groups": {}
+            }
+          }
+        }, 
+        "plugin__rqt_roah_rsbb__TabletStatus__1": {
+          "keys": {}, 
+          "groups": {
+            "dock_widget__TabletStatus": {
+              "keys": {
+                "dockable": {
+                  "type": "repr", 
+                  "repr": "True"
+                }, 
+                "parent": {
+                  "type": "repr", 
+                  "repr": "None"
+                }, 
+                "dock_widget_title": {
+                  "type": "repr", 
+                  "repr": "u'Tablet Status'"
+                }
+              }, 
+              "groups": {}
+            }
+          }
+        }, 
+        "plugin__rqt_roah_rsbb__BenchmarkErrorsAndWarningMessages__1": {
+          "keys": {}, 
+          "groups": {
+            "dock_widget__BenchmarkErrorsAndWarningMessages": {
+              "keys": {
+                "dockable": {
+                  "type": "repr", 
+                  "repr": "True"
+                }, 
+                "parent": {
+                  "type": "repr", 
+                  "repr": "None"
+                }, 
+                "dock_widget_title": {
+                  "type": "repr", 
+                  "repr": "u'BenchmarkErrorsAndWarningMessages'"
+                }
+              }, 
+              "groups": {}
+            }
+          }
+        }, 
+        "plugin__rqt_roah_rsbb__OmfSwitches__1": {
+          "keys": {}, 
+          "groups": {
+            "dock_widget__OmfSwitches": {
+              "keys": {
+                "dockable": {
+                  "type": "repr", 
+                  "repr": "u'true'"
+                }, 
+                "parent": {
+                  "type": "repr", 
+                  "repr": "None"
+                }
+              }, 
+              "groups": {}
+            }
+          }
+        }, 
+        "plugin__rqt_roah_rsbb__Scoring__1": {
+          "keys": {}, 
+          "groups": {
+            "dock_widget__Scoring": {
+              "keys": {
+                "dockable": {
+                  "type": "repr", 
+                  "repr": "True"
+                }, 
+                "parent": {
+                  "type": "repr", 
+                  "repr": "None"
+                }, 
+                "dock_widget_title": {
+                  "type": "repr", 
+                  "repr": "u'Scoring'"
+                }
+              }, 
+              "groups": {}
+            }
+          }
+        }, 
+        "plugin__rqt_roah_devices__DevicesControl__1": {
+          "keys": {}, 
+          "groups": {
+            "dock_widget__DevicesControl": {
+              "keys": {
+                "dockable": {
+                  "type": "repr", 
+                  "repr": "True"
+                }, 
+                "parent": {
+                  "type": "repr", 
+                  "repr": "None"
+                }, 
+                "dock_widget_title": {
+                  "type": "repr", 
+                  "repr": "u'Devices Control'"
+                }
+              }, 
+              "groups": {}
+            }
+          }
+        }, 
+        "plugin__rqt_roah_rsbb__ManualOperation__1": {
+          "keys": {}, 
+          "groups": {
+            "dock_widget__ManualOperation": {
+              "keys": {
+                "dockable": {
+                  "type": "repr", 
+                  "repr": "True"
+                }, 
+                "parent": {
+                  "type": "repr", 
+                  "repr": "None"
+                }, 
+                "dock_widget_title": {
+                  "type": "repr", 
+                  "repr": "u'Manual Operation'"
+                }
+              }, 
+              "groups": {}
+            }
+          }
+        }, 
+        "plugin__rqt_roah_rsbb__LogDisplay__1": {
+          "keys": {}, 
+          "groups": {
+            "dock_widget__LogDisplay": {
+              "keys": {
+                "dockable": {
+                  "type": "repr", 
+                  "repr": "True"
+                }, 
+                "parent": {
+                  "type": "repr", 
+                  "repr": "None"
+                }, 
+                "dock_widget_title": {
+                  "type": "repr", 
+                  "repr": "u'Log'"
+                }
+              }, 
+              "groups": {}
+            }
+          }
+        }, 
+        "plugin__rqt_roah_rsbb__ActiveRobots__1": {
+          "keys": {}, 
+          "groups": {
+            "dock_widget__ActiveRobots": {
+              "keys": {
+                "dockable": {
+                  "type": "repr", 
+                  "repr": "True"
+                }, 
+                "parent": {
+                  "type": "repr", 
+                  "repr": "None"
+                }, 
+                "dock_widget_title": {
+                  "type": "repr", 
+                  "repr": "u'Active Robots'"
+                }
+              }, 
+              "groups": {}
+            }
+          }
+        }, 
+        "plugin__rqt_roah_rsbb__CurrentScore__1": {
+          "keys": {}, 
+          "groups": {
+            "dock_widget__CurrentScore": {
+              "keys": {
+                "dockable": {
+                  "type": "repr", 
+                  "repr": "True"
+                }, 
+                "parent": {
+                  "type": "repr", 
+                  "repr": "None"
+                }, 
+                "dock_widget_title": {
+                  "type": "repr", 
+                  "repr": "u'Current Score'"
+                }
+              }, 
+              "groups": {}
+            }
+          }
+        }, 
+        "plugin__rqt_roah_rsbb__CoreStatus__1": {
+          "keys": {}, 
+          "groups": {
+            "dock_widget__CoreStatus": {
+              "keys": {
+                "dockable": {
+                  "type": "repr", 
+                  "repr": "True"
+                }, 
+                "parent": {
+                  "type": "repr", 
+                  "repr": "None"
+                }, 
+                "dock_widget_title": {
+                  "type": "repr", 
+                  "repr": "u'Core Status'"
+                }
+              }, 
+              "groups": {}
+            }
+          }
+        }
+      }
+    }, 
+    "mainwindow": {
+      "keys": {
+        "geometry": {
+          "type": "repr(QByteArray.hex)", 
+          "repr(QByteArray.hex)": "QtCore.QByteArray('01d9d0cb0001000000000037fffffff20000055f00000309000000410000001800000555000002ff000000000000')", 
+          "pretty-print": "     7   _   A   U     "
+        }, 
+        "state": {
+          "type": "repr(QByteArray.hex)", 
+          "repr(QByteArray.hex)": "QtCore.QByteArray('000000ff00000000fd000000010000000300000515000002b9fc0100000001fc0000000000000515000003de00fffffffc0100000003fc00000000000002740000025900fffffffc0200000002fb00000068007200710074005f0072006f00610068005f0072007300620062005f005f00420065006e00630068006d00610072006b0043006f006e00740072006f006c005f005f0031005f005f00420065006e00630068006d00610072006b0043006f006e00740072006f006c0100000019000001b10000016d00fffffffc000001d000000102000001020100001dfa000000000100000002fb00000064007200710074005f0072006f00610068005f0072007300620062005f005f004d0061006e00750061006c004f007000650072006100740069006f006e005f005f0031005f005f004d0061006e00750061006c004f007000650072006100740069006f006e0100000000ffffffff000000f200fffffffb00000044007200710074005f0072006f00610068005f0072007300620062005f005f00530063006f00720069006e0067005f005f0031005f005f00530063006f00720069006e0067010000000000000274000000ab00fffffffc0000027a0000029b0000017f00fffffffc0200000003fb000000ac007200710074005f0072006f00610068005f0072007300620062005f005f00420065006e00630068006d00610072006b004500720072006f007200730041006e0064005700610072006e0069006e0067004d0065007300730061006700650073005f005f0031005f005f00420065006e00630068006d00610072006b004500720072006f007200730041006e0064005700610072006e0069006e0067004d00650073007300610067006500730100000019000000930000009300fffffffb00000058007200710074005f0072006f00610068005f0072007300620062005f005f0041006300740069007600650052006f0062006f00740073005f005f0031005f005f0041006300740069007600650052006f0062006f0074007301000000b20000007c0000007200fffffffc000001340000019e0000019e0100001dfa000000000100000006fb00000050007200710074005f0072006f00610068005f0072007300620062005f005f0043006f00720065005300740061007400750073005f005f0031005f005f0043006f007200650053007400610074007500730100000000ffffffff000000fb00fffffffb00000058007200710074005f0072006f00610068005f0072007300620062005f005f00430075007200720065006e007400530063006f00720065005f005f0031005f005f00430075007200720065006e007400530063006f007200650100000000ffffffff000000d500fffffffb00000058007200710074005f0072006f00610068005f0072007300620062005f005f005400610062006c00650074005300740061007400750073005f005f0031005f005f005400610062006c006500740053007400610074007500730100000000ffffffff0000014f00fffffffb00000066007200710074005f0072006f00610068005f0064006500760069006300650073005f005f00440065007600690063006500730043006f006e00740072006f006c005f005f0031005f005f00440065007600690063006500730043006f006e00740072006f006c0100000000ffffffff0000010100fffffffb00000050007200710074005f0072006f00610068005f0072007300620062005f005f004c006f00670044006900730070006c00610079005f005f0031005f005f004c006f00670044006900730070006c006100790100000000ffffffff0000009200fffffffb00000050007200710074005f0072006f00610068005f0072007300620062005f005f004f006e006c0069006e00650044006100740061005f005f0031005f005f004f006e006c0069006e006500440061007400610100000000ffffffff000000c800fffffffc00000589000001b60000000000fffffffa000000000200000001fb00000054007200710074005f0072006f00610068005f0072007300620062005f005f004f006d006600530077006900740063006800650073005f005f0031005f005f004f006d0066005300770069007400630068006500730100000000ffffffff0000000000000000000005150000000000000004000000040000000800000008fc00000001000000030000000100000036004d0069006e0069006d0069007a006500640044006f0063006b00570069006400670065007400730054006f006f006c0062006100720000000000ffffffff0000000000000000')", 
+          "pretty-print": "                                        hrqt_roah_rsbb__BenchmarkControl__1__BenchmarkControl                                                                                                                           t                  rqt_roah_rsbb__BenchmarkErrorsAndWarningMessages__1__BenchmarkErrorsAndWarningMessages          Xrqt_roah_rsbb__ActiveRobots__1__ActiveRobots          4                                                                                                                                                                         O                                                                                                                                                                                     Trqt_roah_rsbb__OmfSwitches__1__OmfSwitches                            6MinimizedDockWidgetsToolbar        "
+        }
+      }, 
+      "groups": {
+        "toolbar_areas": {
+          "keys": {
+            "MinimizedDockWidgetsToolbar": {
+              "type": "repr", 
+              "repr": "8"
+            }
+          }, 
+          "groups": {}
+        }
+      }
+    }
+  }
+}

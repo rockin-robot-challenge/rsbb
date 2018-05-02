@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package>
+  <name>rsbb_bmbox</name>
+  <version>0.0.0</version>
+  <description>The rsbb_bmbox package</description>
+  <maintainer email="enrico.piazza@polimi.it">Enrico Piazza</maintainer> <!-- probably not anymore -->
+  <license>LGPLv3</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roslaunch</build_depend>
+  <build_depend>message_generation</build_depend>
+  <run_depend>message_runtime</run_depend>
+
+  <build_depend>rospy</build_depend>
+  <run_depend>rospy</run_depend>
+  
+  <build_depend>std_msgs</build_depend>
+  <run_depend>std_msgs</run_depend>
+
+  <build_depend>tf</build_depend>
+  <run_depend>tf</run_depend>
+
+  <build_depend>rsbb_benchmarking_messages</build_depend>
+  <run_depend>rsbb_benchmarking_messages</run_depend>
+
+</package>

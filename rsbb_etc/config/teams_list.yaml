@@ -1,0 +1,40 @@
+teams_list:
+
+- name: "TestingTeam"
+  password: PASSWORD
+
+- name: "DefaultTeam"
+  password: DefaultKey
+
+- name: "DumpTeam"
+  password: randomkey
+
+- name: "b-it-bots"
+  password: FJ6LazOM
+
+- name: "BARC"
+  password: YEnzHu6P
+
+- name: "Donaxi"
+  password: yNgF6huI
+
+- name: "homer"
+  password: D2wydiJX
+
+- name: "Pumas"
+  password: LY1Eyhk5
+
+- name: "SocRob"
+  password: EKY3GZUe
+
+- name: "Ursus"
+  password: 9Y303emH
+
+- name: "Watermelon"
+  password: tDmOnKzw
+
+- name: "ROSolution"
+  password: O6HZs2Bo
+
+- name: "Trinity"
+  password: 2M0Vf5wZ

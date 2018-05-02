@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Scoring</class>
+ <widget class="QScrollArea" name="Scoring">
+  <property name="windowTitle">
+   <string>Scoring</string>
+  </property>
+  <property name="frameShape">
+   <enum>QFrame::NoFrame</enum>
+  </property>
+  <property name="widgetResizable">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="scrollAreaWidgetContents">
+   <layout class="QVBoxLayout" name="layout"/>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

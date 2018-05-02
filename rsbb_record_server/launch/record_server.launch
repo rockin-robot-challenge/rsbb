@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<launch>
+	<node name="rsbb_record_server" pkg="rsbb_record_server" type="rsbb_record_server" output="screen" respawn="true"/>
+</launch>
+

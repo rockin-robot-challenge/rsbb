@@ -1,0 +1,8 @@
+markerset_to_robot_transform: !!python/tuple
+- [0.0, 0.0, 0.0]
+- [0.0, 0.0, 0.0, 1.0]
+robot_to_markerset_transform: !!python/tuple
+- [0.0, 0.0, 0.0]
+- [0.0, 0.0, 0.0, 1.0]
+team_name: TestingTeam
+transform_timestamp: 2017-12-14_20:37:46_WET(+0000)

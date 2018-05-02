@@ -1,0 +1,57 @@
+
+items:
+- class: a
+  id: 1
+  instance: a1
+  description: "Grey mug"
+  
+- class: a
+  id: 2
+  instance: a2
+  description: "White mug with yellow lines"
+  
+- class: a
+  id: 3
+  instance: a3
+  description: "White mug with yellow dots"
+  
+- class: a
+  id: 4
+  instance: a4
+  description: "Black mug"
+  
+- class: b
+  id: 5
+  instance: b1
+  description: "Knife"
+  
+- class: b
+  id: 6
+  instance: b2
+  description: "Fork"
+  
+- class: b
+  id: 7
+  instance: b3
+  description: "Spoon"
+  
+- class: c
+  id: 8
+  instance: c1
+  description: "Yellow box"
+  
+- class: c
+  id: 9
+  instance: c2
+  description: "Pink box"
+  
+- class: d
+  id: 10
+  instance: d1
+  description: "Frame with SPARC logo"
+  
+- class: d
+  id: 11
+  instance: d2
+  description: "Frame with ERL logo"
+

@@ -1,0 +1,5 @@
+std_msgs/String request
+std_msgs/Float32 timeout
+---
+RefBoxState refbox_state
+std_msgs/Bool result

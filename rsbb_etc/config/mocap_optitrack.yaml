@@ -1,0 +1,29 @@
+rigid_bodies:
+  '3':
+    pose: robot_markerset/pose
+    pose2d: robot_markerset/pose2d
+    child_frame_id: robot_markerset
+    parent_frame_id: testbed_origin
+    publish_only_if_tracked: true
+    
+  '4':
+    pose: table_origin/pose
+    pose2d: table_origin/pose2d
+    child_frame_id: table_origin
+    parent_frame_id: testbed_origin
+    publish_only_if_tracked: true
+    
+  '5':
+    pose: positioner_origin/pose
+    pose2d: positioner_origin/pose2d
+    child_frame_id: positioner_origin
+    parent_frame_id: testbed_origin
+    publish_only_if_tracked: true
+
+  '6':
+    pose: actor_markerset/pose
+    pose2d: actor_markerset/pose2d
+    child_frame_id: actor_markerset
+    parent_frame_id: testbed_origin
+    publish_only_if_tracked: true
+
