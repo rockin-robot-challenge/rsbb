@@ -1,0 +1,9 @@
+people: # The benchmark script picks everyone in this list once, in a random order
+- Joe
+- Peter
+- Alice
+- Michael
+- Brad
+
+goal_timeout:
+  120.0

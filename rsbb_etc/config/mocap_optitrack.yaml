@@ -27,3 +27,9 @@ rigid_bodies:
     parent_frame_id: testbed_origin
     publish_only_if_tracked: true
 
+  '7':
+    pose: person_area_origin/pose
+    pose2d: person_area_origin/pose2d
+    child_frame_id: person_area_origin
+    parent_frame_id: testbed_origin
+    publish_only_if_tracked: true

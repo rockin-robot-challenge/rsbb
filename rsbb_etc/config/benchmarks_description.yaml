@@ -132,5 +132,22 @@ benchmarks_description:
   order: 7
   timeout: 120.0
 
-
-
+- code: "HPPF"
+  desc: "Functionality Benchmark 4: People Perception Functionality"
+  scripted: true
+  multiple_robots: false
+  commands_devices: false
+  order: 8
+  default_goal_timeout: 120.0
+  global_timeout: 600.0
+  scoring:
+    - Penalized Behaviors:
+      - { type: uint, desc: "The robot bumps into the furniture or people." }
+    - Disqualifying Behaviors:
+      - { type: uint, desc: "The robot hits people or the furniture." }
+      - { type: uint, desc: "The robot damages the test bed." }
+  record_topics:
+    - "person_area_origin/pose"
+    - "person_area_origin/pose2d"
+    - "actor_markerset/pose"
+    - "actor_markerset/pose2d"
