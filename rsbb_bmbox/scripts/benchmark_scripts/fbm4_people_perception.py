@@ -113,10 +113,10 @@ class BenchmarkObject (BaseBenchmarkObject):
 				self.request_manual_operation(manual_operation_2)
 			
 				if manual_operation_2.has_been_completed():
-					print "First Manual Operation result: %s" % manual_operation_2.get_result()
+					print "Second Manual Operation result: %s" % manual_operation_2.get_result()
 					self.score["goal_%i" % i]["manual_operation_2"] = manual_operation_2.get_result()
 				else:
-					print "First Manual Operation NOT EXECUTED"
+					print "Second Manual Operation NOT EXECUTED"
 					self.score["goal_%i" % i]["manual_operation_2"] = "not executed"
 			
 				self.save_and_publish_score()
@@ -183,6 +183,7 @@ class BenchmarkObject (BaseBenchmarkObject):
 					rospy.logwarn("The position of the person markerset could not be acquired - restarting current goal")
 
 					execution_time -= segment_time
+					people.append(person)
 
 					continue
 
@@ -216,7 +217,7 @@ class BenchmarkObject (BaseBenchmarkObject):
 
 				# Update overall score
 				self.score['Recognized persons'] = recognized_sum
-				self.score['% Recognized persons'] = str(round(recognized_sum / N * 100, 2)) + '%'
+				self.score['% Recognized persons'] = str(round(recognized_sum / float(N) * 100, 2)) + '%'
 				self.score['Distance error'] = position_error_sum / detected_sum
 				
 			else:
