@@ -37,8 +37,6 @@
 				/rsbb/table_origin/pose2d
 				/rsbb/positioner_origin/pose
 				/rsbb/positioner_origin/pose2d
-				/rsbb/person_area_origin/pose
-				/rsbb/person_area_origin/pose2d
 				/tf
 				/rosout"
 		/>

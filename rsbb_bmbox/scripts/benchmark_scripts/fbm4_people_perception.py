@@ -105,7 +105,7 @@ class BenchmarkObject (BaseBenchmarkObject):
 			## Fist manual operation finished, the person should be trackable inside the area
 			# Check if we can get the person's pose - although we don't use the pose now, only after the robot's end_execute signal
 			person_pose_mocap = None
-			person_pose_mocap = Pose2D_from_tf_concatenation(self, "/person", (0, 0, 0), (0, 0, 0, 1), "/actor_markerset", "/person_area_origin", tf_broadcaster, tf_listener, max_failed_attempts=3)
+			person_pose_mocap = Pose2D_from_tf_concatenation(self, "/person", (0, 0, 0), (0, 0, 0, 1), "/actor_markerset", "/testbed_origin", tf_broadcaster, tf_listener, max_failed_attempts=3)
 			while person_pose_mocap == None:
 				rospy.logwarn("The position of the person markerset could not be acquired - asking RefOp to retry")
 				manual_operation_2 = ManualOperationObject("Could not get %s's pose. Make sure (s)he is inside the designated area and wearing the markerset cap." % person)
@@ -130,7 +130,7 @@ class BenchmarkObject (BaseBenchmarkObject):
 						print "BENCHMARK ABORTED"
 					return
 				
-				person_pose_mocap = Pose2D_from_tf_concatenation(self, "/person", (0, 0, 0), (0, 0, 0, 1), "/actor_markerset", "/person_area_origin", tf_broadcaster, tf_listener, max_failed_attempts=3)
+				person_pose_mocap = Pose2D_from_tf_concatenation(self, "/person", (0, 0, 0), (0, 0, 0, 1), "/actor_markerset", "/testbed_origin", tf_broadcaster, tf_listener, max_failed_attempts=3)
 			
 			#########################################################
 			#   PERSON IS IN THE AREA, SEND THE GOAL TO THE ROBOT   #
@@ -177,7 +177,7 @@ class BenchmarkObject (BaseBenchmarkObject):
 
 				# Acquire person position from actor_markerset, which is the ground truth
 				person_pose_mocap = None
-				person_pose_mocap = Pose2D_from_tf_concatenation(self, "/person", (0, 0, 0), (0, 0, 0, 1), "/actor_markerset", "/person_area_origin", tf_broadcaster, tf_listener, max_failed_attempts=3)
+				person_pose_mocap = Pose2D_from_tf_concatenation(self, "/person", (0, 0, 0), (0, 0, 0, 1), "/actor_markerset", "/testbed_origin", tf_broadcaster, tf_listener, max_failed_attempts=3)
 				if person_pose_mocap == None:
 					# Robot has finished the goal, but the pose couldn't be acquired from MoCap: restart the goal
 					rospy.logwarn("The position of the person markerset could not be acquired - restarting current goal")

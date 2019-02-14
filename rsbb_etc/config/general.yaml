@@ -16,4 +16,5 @@ general_record_list:
   - "/timeout"
   - "/rosout"
   - "/tf"
+  - "/tf_static"
 
