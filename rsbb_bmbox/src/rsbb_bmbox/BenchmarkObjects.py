@@ -568,6 +568,15 @@ class RefBoxComm:
 		self.__fsm.notify_condition_variables()
 		self.__refbox_state_observer.notify_condition_variables()
 
+	def abort_benchmark(self, message=''):
+
+		rospy.loginfo("Benchmark aborted, stopping benchmark")
+		
+		abort_benchmark = rospy.ServiceProxy("bmbox/abort_benchmark", AbortBenchmark)
+		abort_benchmark_payload = String(data = message)
+		abort_benchmark(abort_benchmark_payload)
+
+		return
 	
 	
 	def __is_waiting_to_start(self):

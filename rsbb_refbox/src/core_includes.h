@@ -57,6 +57,7 @@
 #include <rsbb_benchmarking_messages/GoalComplete.h>
 #include <rsbb_benchmarking_messages/RefereeScore.h>
 #include <rsbb_benchmarking_messages/EndBenchmark.h>
+#include <rsbb_benchmarking_messages/AbortBenchmark.h>
 #include <rsbb_benchmarking_messages/StopBenchmark.h>
 #include <rsbb_benchmarking_messages/RecordRequest.h>
 #include <rsbb_benchmarking_messages/StopRecordRequest.h>
