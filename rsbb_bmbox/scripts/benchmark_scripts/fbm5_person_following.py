@@ -49,11 +49,12 @@ class BenchmarkObject (BaseBenchmarkObject):
 	
 	def execute(self):
 		# Maximum consecutive times where pose-acquisition fails
-		MAX_CONSECUTIVE_MISSING_POSES = 20
+		MAX_CONSECUTIVE_MISSING_POSES = 20 # TODO remove this mechanism
 		
-		# Load acceptable distance range from config
-		MIN_ACCEPTABLE_DISTANCE = self.params['min_acceptable_following_distance']
-		MAX_ACCEPTABLE_DISTANCE = self.params['max_acceptable_following_distance']
+		# Load acceptable distance from config
+		MIN_FOLLOWING_DISTANCE = self.params['min_following_distance']
+		MAX_FOLLOWING_DISTANCE = self.params['max_following_distance']
+		DESIRED_FOLLOWING_DISTANCE = self.params['desired_following_distance']
 
 		# Read markerset_to_robot transform from the transform file
 		team_name = self.get_benchmark_team()
@@ -69,15 +70,23 @@ class BenchmarkObject (BaseBenchmarkObject):
 		tf_broadcaster = tf.TransformBroadcaster()
 		
 		# Variables to compute score
-		distance_samples = 0
-		distance_samples_within_tolerance = 0
+		mocap_success_sum = 0
+		mocap_failure_sum = 0
+		deviation_from_desired_distance_sum = 0
 		distance_covered_while_following = 0
-		consecutive_missing_poses = 0
 		last_absolute_robot_pose = None
 		
 		# Start the benchmark
 		while self.is_benchmark_running():
 			self.score = {}
+
+			## Check if both person and robot's poses can be acquired
+			robot_to_human_pose = None
+			robot_to_human_pose = Pose2D_from_tf_concatenation(self, "/robot", markerset_to_robot_transform[0], markerset_to_robot_transform[1], "/robot_markerset", "/actor_markerset", tf_broadcaster, tf_listener, max_failed_attempts=3, timeout=0.5)
+			while robot_to_human_pose == None:
+				manual_operation = ManualOperationObject("Failed to acquire pose of human or robot. Make sure they have detectable markersets.")
+				self.request_manual_operation(manual_operation)
+				robot_to_human_pose = Pose2D_from_tf_concatenation(self, "/robot", markerset_to_robot_transform[0], markerset_to_robot_transform[1], "/robot_markerset", "/actor_markerset", tf_broadcaster, tf_listener, max_failed_attempts=3, timeout=0.5)
 
 			## Send request for robot to start following
 			goal = GoalObject({}, self.params['goal_timeout'])
@@ -86,9 +95,12 @@ class BenchmarkObject (BaseBenchmarkObject):
 			## Start tracking pose of human and robot.
 			benchmark_start_time = rospy.Time.now()
 
+			# Sleep for 8 seconds so that the robot has time to position itself at the desired following distance.
+			rospy.sleep(8.0)
+
 			while (not goal.has_timed_out()) and (not goal._executed):
 				sample_start_time = rospy.Time.now()
-
+				
 				## Acquire robot_markerset in relation to actor_markerset
 				robot_to_human_pose = None
 				robot_to_human_pose = Pose2D_from_tf_concatenation(self, "/robot", markerset_to_robot_transform[0], markerset_to_robot_transform[1], "/robot_markerset", "/actor_markerset", tf_broadcaster, tf_listener, max_failed_attempts=1, timeout=0.2)
@@ -98,18 +110,18 @@ class BenchmarkObject (BaseBenchmarkObject):
 				
 				## Update score
 				if robot_to_human_pose != None:
-					rospy.loginfo('robot_to_human_pose: (%f, %f)' % (robot_to_human_pose.x, robot_to_human_pose.y))
+					mocap_success_sum += 1
 
-					consecutive_missing_poses = 0
-					distance_samples += 1
+					rospy.loginfo('robot_to_human_pose: (%f, %f)' % (robot_to_human_pose.x, robot_to_human_pose.y))
 
 					# Calculate distance
 					distance = sqrt( robot_to_human_pose.x**2 + robot_to_human_pose.y**2 )
 					rospy.loginfo('Current following distance: %f' % distance)
 
-					if (distance >= MIN_ACCEPTABLE_DISTANCE and distance <= MAX_ACCEPTABLE_DISTANCE):
-						distance_samples_within_tolerance += 1
+					deviation_from_desired_distance = abs(distance - DESIRED_FOLLOWING_DISTANCE)
+					deviation_from_desired_distance_sum += deviation_from_desired_distance
 
+					if (distance >= MIN_FOLLOWING_DISTANCE and distance <= MAX_FOLLOWING_DISTANCE):
 						# Update distance_covered_while_following
 						if last_absolute_robot_pose != None and absolute_robot_pose != None:
 							x_dist = absolute_robot_pose.x - last_absolute_robot_pose.x
@@ -118,27 +130,9 @@ class BenchmarkObject (BaseBenchmarkObject):
 							distance_covered_while_following += dist
 
 				else:
-					consecutive_missing_poses += 1
-					if consecutive_missing_poses > MAX_CONSECUTIVE_MISSING_POSES:
-						print "Robot and person poses missing for too much time. Benchmark failed."
-						rospy.logerr("Robot and person poses missing for too much time. Benchmark failed.")
-						self.abort_benchmark(message='Benchmark failed!')
-						# TODO possibly later add a pause_benchmark service to core and call it here instead of aborting (see commented code below)
-						return
+					mocap_failure_sum += 1
 
-						# Below can't be done, because a manual operation can't be started while executing a goal
-						# while robot_to_human_pose == None:
-						# 	manual_operation = ManualOperationObject("Failed to acquire poses for too long. Please make sure the robot and person are trackable by the MoCap system.")
-						# 	self.request_manual_operation(manual_operation)
-
-						# 	robot_to_human_pose = None
-						# 	robot_to_human_pose = Pose2D_from_tf_concatenation(self, "/robot", markerset_to_robot_transform[0], markerset_to_robot_transform[1], "/robot_markerset", "/actor_markerset", tf_broadcaster, tf_listener, max_failed_attempts=1, timeout=0.2)
-
-						# 	absolute_robot_pose = None
-						# 	absolute_robot_pose = Pose2D_from_tf_concatenation(self, "/robot", markerset_to_robot_transform[0], markerset_to_robot_transform[1], "/robot_markerset", "/testbed_origin", tf_broadcaster, tf_listener, max_failed_attempts=1, timeout=0.2)
-
-				if absolute_robot_pose != None:
-					last_absolute_robot_pose = absolute_robot_pose
+				last_absolute_robot_pose = absolute_robot_pose
 
 				## Sleep for the remaining amount of time to 0.5s (position should be sampled every 0.5s)
 				current_time = rospy.Time.now()
@@ -164,13 +158,19 @@ class BenchmarkObject (BaseBenchmarkObject):
 				rospy.logerr('Benchmark failed: finished prematurely or took too long')
 				self.score['Result'] = 'Benchmark failed: finished prematurely or took too long'
 				self.save_and_publish_score()
-				self.abort_benchmark()
+				self.abort_benchmark(message='Benchmark failed! Finished prematurely or took too long')
 				return
 
 			# Calculate score statistics and print.
-			if distance_samples > 0:
-				self.score['Acceptable distance accuracy'] = distance_samples_within_tolerance / float(distance_samples)
-				self.score['Distance covered while following'] = distance_covered_while_following
+			if mocap_success_sum > 0:
+				self.score['Average deviation from desired distance'] = deviation_from_desired_distance_sum / float(mocap_success_sum)				
+			self.score['Distance covered while following'] = distance_covered_while_following
+
+			percent_mocap_failures = mocap_failure_sum / float(mocap_success_sum + mocap_failure_sum) * 100
+			self.score['Benchmark reliability'] = str(round(100 - percent_mocap_failures, 1)) + '%'
+
+			if percent_mocap_failures > 50:
+				self.score['WARNING'] = ('%.1f%% of the time, mocap pose acquiring failed. Consider repeating the benchmark.' % percent_mocap_failures)
 			
 			self.save_and_publish_score()
 
