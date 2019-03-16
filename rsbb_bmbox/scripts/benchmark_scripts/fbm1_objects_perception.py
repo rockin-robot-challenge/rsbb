@@ -104,12 +104,8 @@ class BenchmarkObject (BaseBenchmarkObject):
 			
 			if manual_operation_1.has_been_completed():
 				print "First Manual Operation result: %s" % manual_operation_1.get_result()
-				self.score["goal_%i"%i]["manual_operation_1"] = manual_operation_1.get_result()
 			else:
 				print "First Manual Operation NOT EXECUTED"
-				self.score["goal_%i"%i]["manual_operation_1"] = "not executed"
-			
-			self.save_and_publish_score()
 			
 			if not self.is_benchmark_running():
 				if self.has_benchmark_timed_out():
@@ -147,12 +143,8 @@ class BenchmarkObject (BaseBenchmarkObject):
 				
 				if manual_operation_3.has_been_completed():
 					print "First Manual Operation result: %s" % manual_operation_3.get_result()
-					self.score["goal_%i"%i]["manual_operation_3"] = manual_operation_3.get_result()
 				else:
 					print "First Manual Operation NOT EXECUTED"
-					self.score["goal_%i"%i]["manual_operation_3"] = "not executed"
-				
-				self.save_and_publish_score()
 				
 				if not self.is_benchmark_running():
 					if self.has_benchmark_timed_out():
@@ -184,12 +176,8 @@ class BenchmarkObject (BaseBenchmarkObject):
 			
 			if manual_operation_2.has_been_completed():
 				print "First Manual Operation result: %s" % manual_operation_2.get_result()
-				self.score["goal_%i"%i]["manual_operation_2"] = manual_operation_2.get_result()
 			else:
 				print "First Manual Operation NOT EXECUTED"
-				self.score["goal_%i"%i]["manual_operation_2"] = "not executed"
-			
-			self.save_and_publish_score()
 			
 			if not self.is_benchmark_running():
 				if self.has_benchmark_timed_out():

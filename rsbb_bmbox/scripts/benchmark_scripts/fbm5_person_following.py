@@ -48,9 +48,6 @@ class BenchmarkObject (BaseBenchmarkObject):
 	benchmark_code = "HPFF"
 	
 	def execute(self):
-		# Maximum consecutive times where pose-acquisition fails
-		MAX_CONSECUTIVE_MISSING_POSES = 20 # TODO remove this mechanism
-		
 		# Load acceptable distance from config
 		MIN_FOLLOWING_DISTANCE = self.params['min_following_distance']
 		MAX_FOLLOWING_DISTANCE = self.params['max_following_distance']

@@ -16,6 +16,7 @@ from datetime import date, datetime
 from dateutil.tz import tzlocal
 from exceptions import NotImplementedError
 import errno
+import copy
 
 STATE_UPDATE_RATE = 10 # 10Hz
 
@@ -854,7 +855,22 @@ class BaseBenchmarkObject (RefBoxComm, object):
 		self.__write_result_file()
 		if not rospy.is_shutdown():
 			try:
-				self.__result_publisher.publish(String(data = yaml.safe_dump(self.__result_object, default_flow_style=False)))
+				# Pretty print: root node gets printed on the bottom as SCORE SUMMARY
+				overall = {}
+				leaves = []
+				result_copy =  copy.deepcopy(self.__result_object)
+				score_info = result_copy['score']
+				for key in score_info:
+					if not type(score_info[key]) is dict:
+						overall[key] = score_info[key]
+						leaves.append(key)
+
+				for leaf in leaves: del result_copy['score'][leaf]
+
+				score_text = String(yaml.safe_dump(result_copy, default_flow_style=False) + '\n\n' +
+							'SCORE SUMMARY:\n' +
+							yaml.safe_dump(overall, default_flow_style=False))
+				self.__result_publisher.publish(score_text)
 			except rospy.ROSException:
 				print "Couldn't publish result"
 	

@@ -155,8 +155,6 @@ class BenchmarkObject (BaseBenchmarkObject):
 				
 				if manual_operation_3.has_been_completed():
 					print "First Manual Operation result: %s" % manual_operation_3.get_result()
-					self.score["segment_%i"%(i+1)]["manual_operation"] = manual_operation_3.get_result()
-					self.save_and_publish_score()
 					
 					if manual_operation_3.get_result() == 's':
 						rospy.logwarn("Waypoint %i SKIPPED" % (i+1))
@@ -167,9 +165,6 @@ class BenchmarkObject (BaseBenchmarkObject):
 					
 				else:
 					print "First Manual Operation NOT EXECUTED"
-					self.score["segment_%i"%(i+1)]["manual_operation"] = "not executed"
-				
-				self.save_and_publish_score()
 				
 				if not self.is_benchmark_running():
 					if self.has_benchmark_timed_out():
