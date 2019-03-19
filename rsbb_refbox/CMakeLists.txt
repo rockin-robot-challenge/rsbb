@@ -1,6 +1,10 @@
 cmake_minimum_required(VERSION 2.8.7)
 project(roah_rsbb)
 
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fPIC")
+set(UUID_LINKER_FLAG "-luuid")
+set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} ${UUID_LINKER_FLAG}")
+
 find_package(catkin REQUIRED COMPONENTS
   rosbag
   roscpp
@@ -42,9 +46,16 @@ else()
   message(STATUS "  using yaml-cpp from ${YAML_CPP_LIBRARIES}")
 endif()
 
-find_package(Qt4 REQUIRED QtCore QtGui)
-include(${QT_USE_FILE})
+find_package(Qt5 REQUIRED
+    Core
+    Gui
+    Widgets
+)
 
+include_directories(${CMAKE_CURRENT_SOURCE_DIR})
+include_directories(${Qt5Widgets_INCLUDE_DIRS})
+include_directories(${Qt5Gui_INCLUDE_DIRS})
+include_directories(${Qt5Core_INCLUDE_DIRS})
 
 ################################################
 ## Declare ROS messages, services and actions ##
@@ -106,23 +117,27 @@ include_directories(
 add_executable(core src/core.cpp)
 add_dependencies(core roah_rsbb_generate_messages_cpp)
 target_link_libraries(core ${DISAMBIGUATION}roah_rsbb_msgs ${DISAMBIGUATION}protobuf_comm ${catkin_LIBRARIES} ${YAML_CPP_LIBRARIES})
+target_link_libraries( core Qt5::Widgets Qt5::Core Qt5::Gui )
 
 add_executable(public src/public.cpp)
 add_dependencies(public roah_rsbb_generate_messages_cpp)
 target_link_libraries(public rqt_roah_rsbb ${catkin_LIBRARIES})
+target_link_libraries( public Qt5::Widgets Qt5::Core Qt5::Gui )
 
 add_executable(shutdown_service src/shutdown_service.cpp)
 target_link_libraries(shutdown_service ${catkin_LIBRARIES})
+target_link_libraries( shutdown_service Qt5::Widgets Qt5::Core Qt5::Gui )
 
 add_executable(sounds src/sounds.cpp)
 add_dependencies(sounds roah_rsbb_generate_messages_cpp)
 target_link_libraries(sounds ${catkin_LIBRARIES})
+target_link_libraries( sounds Qt5::Widgets Qt5::Core Qt5::Gui )
 
 file(GLOB RQT_LIB_SOURCES ${PROJECT_SOURCE_DIR}/src/rqt_roah_rsbb/*.cpp)
 add_library(rqt_roah_rsbb ${RQT_LIB_SOURCES})
 add_dependencies(rqt_roah_rsbb roah_rsbb_generate_messages_cpp)
 target_link_libraries(rqt_roah_rsbb roah_rsbb_qt ${QT_LIBRARIES} ${catkin_LIBRARIES})
-
+target_link_libraries( rqt_roah_rsbb Qt5::Widgets Qt5::Core Qt5::Gui )
 
 #############
 ## Install ##

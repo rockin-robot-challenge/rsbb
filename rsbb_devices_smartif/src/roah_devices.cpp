@@ -90,7 +90,7 @@ class Bell
         boost::lock_guard<boost::mutex> _ (state_mutex_);
         state_ = Time::now();
       }
-      ring_pub_.publish (make_shared<std_msgs::Empty>());
+      ring_pub_.publish (boost::make_shared<std_msgs::Empty>());
 
       update_();
     }
@@ -282,7 +282,7 @@ class RoahDevices
     void
     update()
     {
-      roah_devices::DevicesState::Ptr msg = make_shared<roah_devices::DevicesState>();
+      roah_devices::DevicesState::Ptr msg = boost::make_shared<roah_devices::DevicesState>();
       msg->bell = bell_.get_state();
       msg->switch_1 = switch_1_.get_state();
       msg->switch_2 = switch_2_.get_state();

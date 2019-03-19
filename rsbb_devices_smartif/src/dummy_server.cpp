@@ -34,14 +34,12 @@ using namespace boost;
 using namespace boost::asio;
 using boost::asio::ip::tcp;
 
-
-
 class DummyServer
 {
     io_service io_service_;
     tcp::acceptor acceptor_;
-    shared_ptr<tcp::socket> acceptor_socket_;
-    shared_ptr<tcp::socket> connection_socket_;
+    boost::shared_ptr<tcp::socket> acceptor_socket_;
+    boost::shared_ptr<tcp::socket> connection_socket_;
 
     uint8_t command_;
 
@@ -49,16 +47,16 @@ class DummyServer
     start_accept()
     {
       // cout << "Accepting..." << endl;
-      acceptor_socket_ = make_shared<tcp::socket> (boost::ref (io_service_));
+      acceptor_socket_ = boost::make_shared<tcp::socket> (boost::ref (io_service_));
       acceptor_.async_accept (*acceptor_socket_,
                               boost::bind (&DummyServer::handle_accept,
                                            this,
                                            acceptor_socket_,
-                                           placeholders::error));
+                                           boost::asio::placeholders::error));
     }
 
     void
-    handle_accept (shared_ptr<tcp::socket> socket,
+    handle_accept (boost::shared_ptr<tcp::socket> socket,
                    boost::system::error_code const& error)
     {
       if (! error) {
@@ -69,7 +67,7 @@ class DummyServer
         }
         else {
           cout << "DUMMY SERVER: Connection REJECTED from " << lexical_cast<string> (socket->remote_endpoint()) << endl << flush;
-          shared_ptr<vector<uint8_t> > b = make_shared<vector<uint8_t> >();
+          boost::shared_ptr<vector<uint8_t> > b = boost::make_shared<vector<uint8_t> >();
           serialize_byte ('E', *b);
           serialize_string (lexical_cast<string> (connection_socket_->remote_endpoint()), *b);
           async_write (*socket,

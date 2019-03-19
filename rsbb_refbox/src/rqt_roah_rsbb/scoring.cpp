@@ -179,4 +179,4 @@ void Scoring::spin_cb(int value) {
 }
 }
 
-PLUGINLIB_DECLARE_CLASS(rqt_roah_rsbb, Scoring, rqt_roah_rsbb::Scoring, rqt_gui_cpp::Plugin)
+PLUGINLIB_EXPORT_CLASS(rqt_roah_rsbb::Scoring, rqt_gui_cpp::Plugin)

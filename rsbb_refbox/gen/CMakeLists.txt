@@ -1,5 +1,5 @@
 file(GLOB_RECURSE UI_SOURCES ${PROJECT_SOURCE_DIR}/src/*.ui)
-qt4_wrap_ui(UI_H ${UI_SOURCES})
+qt5_wrap_ui(UI_H ${UI_SOURCES})
 
 include_directories(${CMAKE_CURRENT_BINARY_DIR})
 
@@ -11,10 +11,10 @@ foreach(header ${ALL_HEADERS})
     list(APPEND MOC_H "${header}")
   endif()
 endforeach()
-qt4_wrap_cpp(MOC_CPP ${MOC_H})
+qt5_wrap_cpp(MOC_CPP ${MOC_H})
 
 file(GLOB_RECURSE RES_QRC ${PROJECT_SOURCE_DIR}/src/*.qrc)
-qt4_add_resources(RES_CPP ${RES_QRC})
+qt5_add_resources(RES_CPP ${RES_QRC})
 
 add_library(roah_rsbb_qt SHARED ${UI_H} ${MOC_CPP} ${RES_CPP})
 

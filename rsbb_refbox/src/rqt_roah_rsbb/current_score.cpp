@@ -76,4 +76,4 @@ void CurrentScore::update() {
 }
 }
 
-PLUGINLIB_DECLARE_CLASS(rqt_roah_rsbb, CurrentScore, rqt_roah_rsbb::CurrentScore, rqt_gui_cpp::Plugin)
+PLUGINLIB_EXPORT_CLASS(rqt_roah_rsbb::CurrentScore, rqt_gui_cpp::Plugin)

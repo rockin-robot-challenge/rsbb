@@ -36,7 +36,7 @@ PublicDisplay::PublicDisplay() :
 
 	ui_.setupUi(this);
 
-	ui_.schedule->horizontalHeader()->setResizeMode(QHeaderView::Fixed);
+	ui_.schedule->horizontalHeader()->setSectionResizeMode(QHeaderView::Fixed);
 
 	connect(&update_timer_, SIGNAL(timeout()), this, SLOT(update()));
 	update_timer_.start(500);
