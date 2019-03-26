@@ -66,7 +66,7 @@ git submodule update --init
 Compile as a normal ROS package in your Catkin workspace.
 
 **Note on Virtual Machines**:
-If running in a VM, I've encountered a problem where the machine must have 2 CPU cores available, otherwise RSBB won't build correctly. Also, you might have network connectivity issues when running inside a VM.
+If running in a VM, I've encountered a problem where the machine must have at least 2 CPU cores available, otherwise RSBB won't build correctly. Also, you might have network connectivity issues when running inside a VM.
 
 ## Network Setup
 
