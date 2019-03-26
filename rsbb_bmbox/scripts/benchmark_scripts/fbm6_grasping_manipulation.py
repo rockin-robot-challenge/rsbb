@@ -231,6 +231,8 @@ class BenchmarkObject (BaseBenchmarkObject):
 				# Update the score with the result of the current goal
 				self.score["goal_%i" % i]['Object grasped'] = object_grasped
 				self.score["goal_%i" % i]['Distance error'] = distance_error
+				self.score["goal_%i" % i]['Target object position'] = '(%.2f, %.2f)' % (target_x, target_y)
+				self.score["goal_%i" % i]['Measured object position'] = '(%.2f, %.2f)' % (object_pose_mocap.x, object_pose_mocap.y)
 
 				# Update overall score
 				self.score["Objects grasped"] = str(objects_grasped_sum) + " out of " + str(N)

@@ -6,7 +6,7 @@ Note that the name 'rockin' refers to the previous version of the competition.
 
 :information_source: This package is oriented to the competition organisers, **team members** may want to visit the package for communication with the RSBB, available in [at_home_rsbb_comm_ros](https://github.com/rockin-robot-challenge/at_home_rsbb_comm_ros).
 
-Table of Content:
+Table of Contents:
 
 * [Installation guide (this README)](/README.md#Installation)
 * [Architecture overview](/rsbb_etc/doc/rsbb_arch_overview.md)
@@ -19,6 +19,14 @@ Table of Content:
 
 # Installation
 
+RSBB works on:
+* Ubuntu 14.04 + ROS Indigo (`master` branch)
+* Ubuntu 16.04 + ROS Kinetic (`melodic` branch)
+* Ubuntu 18.04 + ROS Melodic (`melodic` branch)
+
+Make sure you choose the correct branch for your distribution.
+If you are on Ubuntu 16 or 18, you need to `git checkout melodic` after cloning this repository.
+
 :warning: Please remember to always update right before the competitions!
 ```bash
 git pull
@@ -30,31 +38,23 @@ This repo is shared with the [roah_rsbb_comm_ros](https://github.com/rockin-robo
 
 ## Dependencies
 
-You need to have installed a C++11 compiler, CMake, Boost, Protobuf and OpenSSL.
+You need to have installed a C++11 compiler, CMake, Boost, Protobuf, OpenSSL and mplayer (to play the sounds).
 
 If you are using Ubuntu, install the dependencies with:
 ```bash
-sudo apt-get install build-essential cmake libboost-all-dev libprotoc-dev protobuf-compiler libssl-dev ros-$ROS_DISTRO-map-server
+sudo apt-get install build-essential cmake libboost-all-dev libprotoc-dev protobuf-compiler libssl-dev ros-$ROS_DISTRO-map-server mplayer
 ```
 
+<!---
+Probably not necessary anymore:
 And install the Levenshtein module for Python:
 ```bash
 sudo easy_install python-Levenshtein
+# For ubuntu 18: sudo apt-get install python-levenshtein
 ```
-<!---
-still necessary?
 -->
-
-:warning: The RSBB is not compatible with Ubuntu 16.04, you need to use ROS Indigo on Ubuntu 14.04.x (or ROS Hydro on Ubuntu 12.04.x).
-To install and set up ROS, follow the instructions at http://wiki.ros.org/ROS/Installation/ .
-
-This version of the RSBB was tested with Ubuntu 14.04.5 LTS (Trusty Tahr) and ROS Indigo.
 
 The RSBB is a collection of ROS packages, and does not depend on other packages or software except the ones listed before.
-
-<!---
-TODO add the program to play sounds in the dependencies
--->
 
 ## Compiling
 
@@ -65,6 +65,8 @@ git submodule update --init
 
 Compile as a normal ROS package in your Catkin workspace.
 
+**Note on Virtual Machines**:
+If running in a VM, I've encountered a problem where the machine must have 2 CPU cores available, otherwise RSBB won't build correctly. Also, you might have network connectivity issues when running inside a VM.
 
 ## Network Setup
 
@@ -72,7 +74,6 @@ The robots and the RSBB must be on the same network.
 The following graph shows an example of a possible network setup:
 
 ![Network Example](/rsbb_etc/doc/images/example_RSBB_network_graph.svg)
-
 
 
 ## Configuration
@@ -98,6 +99,7 @@ roslaunch rsbb_etc rsbb.launch
 ### Testing
 
 Now all benchmarks can be executed, but since a robot must be availabe on the network, it is often useful to test the communication with the RSBB by running the so called Dummy Robot, from the [roah_rsbb_comm_ros](https://github.com/rockin-robot-challenge/at_home_rsbb_comm_ros) package.
+
 
 ### Executing benchmarks
 
