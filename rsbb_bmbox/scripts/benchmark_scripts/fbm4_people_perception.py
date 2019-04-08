@@ -186,8 +186,8 @@ class BenchmarkObject (BaseBenchmarkObject):
 				rospy.loginfo("Received result - X: %.2f \t Y: %.2f \t Theta: %.2f \t Person name: %s"
 					% (result['x'], result['y'], result['theta'], result['person_name']))
 
-				# Compare person name
-				recognized = (result['person_name'] == person)
+				# Compare person name (case-insensitive)
+				recognized = (result['person_name'].lower() == person.lower())
 				if recognized:
 					recognized_sum += 1
 				

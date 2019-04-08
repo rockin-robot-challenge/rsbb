@@ -4,7 +4,7 @@ RSBB: Referee, Scoring and Benchmarking Box
 This repository contains the ERL-SR (European Robotics League - Service Robots) Referee, Scoring and Benchmarking Box.
 Note that the name 'rockin' refers to the previous version of the competition.
 
-:information_source: This package is oriented to the competition organisers, **team members** may want to visit the package for communication with the RSBB, available in [at_home_rsbb_comm_ros](https://github.com/rockin-robot-challenge/at_home_rsbb_comm_ros).
+:information_source: This package is oriented to the competition organisers. **Team members** may want to visit the package for communication with the RSBB, available in [at_home_rsbb_comm_ros](https://github.com/rockin-robot-challenge/at_home_rsbb_comm_ros).
 
 Table of Contents:
 
@@ -20,12 +20,12 @@ Table of Contents:
 # Installation
 
 RSBB works on:
-* Ubuntu 14.04 + ROS Indigo (`master` branch)
-* Ubuntu 16.04 + ROS Kinetic (`melodic` branch)
-* Ubuntu 18.04 + ROS Melodic (`melodic` branch)
+* Ubuntu 14.04 + ROS Indigo (`indigo` branch)
+* Ubuntu 16.04 + ROS Kinetic (`master` branch)
+* Ubuntu 18.04 + ROS Melodic (`master` branch)
 
 Make sure you choose the correct branch for your distribution.
-If you are on Ubuntu 16 or 18, you need to `git checkout melodic` after cloning this repository.
+If you are on Ubuntu 14, you need to `git checkout indigo` after cloning this repository.
 
 :warning: Please remember to always update right before the competitions!
 ```bash
@@ -85,7 +85,7 @@ From the example of the network reported before, the broadcast address would be 
 These two directories can be the same.
 For example: `~/rsbb_output/`, in this case the directory "rsbb_output" should be created in home.
 
-The configuration parameters are documented in [configuration overview](/rsbb_etc/doc/configuration_overview.md).
+The configuration parameters are documented in [configuration overview](/rsbb_etc/doc/configuration/configuration_overview.md).
 
 
 ## Running
@@ -100,12 +100,21 @@ roslaunch rsbb_etc rsbb.launch
 
 Now all benchmarks can be executed, but since a robot must be availabe on the network, it is often useful to test the communication with the RSBB by running the so called Dummy Robot, from the [roah_rsbb_comm_ros](https://github.com/rockin-robot-challenge/at_home_rsbb_comm_ros) package.
 
+For benchmarks that require motion capture, there is a helper package that publishes the required topics, as if they were being published by the mocap system. To run it, call e.g. : 
+```bash
+rosrun rsbb_mocap_helpers/FBM4_mock.py
+```
+
 
 ### Executing benchmarks
 
 `TODO: brief instructions to run benchmarks`
 Running a benchmark is similar to the previous (deprecated) verison of the RSBB.
 Some instructions are available in the [RSBBv1 documentation (deprecated)](/rsbb_etc/doc/RoAH_RSBBv1_Manual_deprecated.pdf).
+
+## Support
+
+If you have any questions, please add them as issues on this repo.
 
 <!--- TODO
 * auxiliary nodes (MoCap, etc)
