@@ -1,4 +1,3 @@
 [submodule "rsbb_refbox/comm"]
 	path = rsbb_refbox/comm
-	url = https://github.com/joaomacp/at_home_rsbb_comm.git
-	branch = feature-hppf
+	url = https://github.com/rockin-robot-challenge/at_home_rsbb_comm.git
