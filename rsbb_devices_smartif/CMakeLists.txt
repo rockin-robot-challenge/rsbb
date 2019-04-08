@@ -1,6 +1,9 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(roah_devices)
 
+set(UUID_LINKER_FLAG "-luuid")
+set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} ${UUID_LINKER_FLAG}")
+
 find_package(catkin REQUIRED COMPONENTS
   roscpp
   rqt_gui
@@ -13,9 +16,16 @@ find_package(catkin REQUIRED COMPONENTS
 ## System dependencies are found with CMake's conventions
 find_package(Boost REQUIRED COMPONENTS system thread)
 
-find_package(Qt4 REQUIRED QtCore QtGui)
-include(${QT_USE_FILE})
 
+find_package(Qt5 REQUIRED
+    Core
+    Gui
+    Widgets
+)
+
+include_directories(${Qt5Widgets_INCLUDE_DIRS})
+include_directories(${Qt5Gui_INCLUDE_DIRS})
+include_directories(${Qt5Core_INCLUDE_DIRS})
 
 ################################################
 ## Declare ROS messages, services and actions ##
@@ -72,13 +82,16 @@ include_directories(
 add_executable(roah_devices src/roah_devices.cpp)
 add_dependencies(roah_devices roah_devices_generate_messages_cpp)
 target_link_libraries(roah_devices ${catkin_LIBRARIES})
+target_link_libraries( roah_devices Qt5::Widgets Qt5::Core Qt5::Gui )
 
 add_executable(dummy_server src/dummy_server.cpp)
 target_link_libraries(dummy_server ${catkin_LIBRARIES})
+target_link_libraries( dummy_server Qt5::Widgets Qt5::Core Qt5::Gui )
 
 add_library(rqt_roah_devices src/devices_control.cpp)
 add_dependencies(rqt_roah_devices roah_devices_generate_messages_cpp)
 target_link_libraries(rqt_roah_devices roah_devices_qt ${QT_LIBRARIES} ${catkin_LIBRARIES})
+target_link_libraries( rqt_roah_devices Qt5::Widgets Qt5::Core Qt5::Gui )
 
 
 #############

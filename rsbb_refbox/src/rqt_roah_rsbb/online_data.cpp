@@ -98,4 +98,4 @@ namespace rqt_roah_rsbb
 
 
 
-PLUGINLIB_DECLARE_CLASS (rqt_roah_rsbb, OnlineData, rqt_roah_rsbb::OnlineData, rqt_gui_cpp::Plugin)
+PLUGINLIB_EXPORT_CLASS (rqt_roah_rsbb::OnlineData, rqt_gui_cpp::Plugin)

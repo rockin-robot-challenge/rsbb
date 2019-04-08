@@ -148,4 +148,4 @@ void BenchmarkErrorsAndWarningMessages::clear() {
 }
 }
 
-PLUGINLIB_DECLARE_CLASS(rqt_roah_rsbb, BenchmarkErrorsAndWarningMessages, rqt_roah_rsbb::BenchmarkErrorsAndWarningMessages, rqt_gui_cpp::Plugin)
+PLUGINLIB_EXPORT_CLASS(rqt_roah_rsbb::BenchmarkErrorsAndWarningMessages, rqt_gui_cpp::Plugin)

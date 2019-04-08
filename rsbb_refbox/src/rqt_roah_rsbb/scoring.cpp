@@ -25,6 +25,7 @@
 #include <QLabel>
 #include <QCheckBox>
 #include <QSpinBox>
+#include <QMetaType>
 
 #include <pluginlib/class_list_macros.h>
 
@@ -50,6 +51,8 @@ Scoring::Scoring() :
 }
 
 void Scoring::initPlugin(qt_gui_cpp::PluginContext& context) {
+	qRegisterMetaType<QVector<int> >("QVector<int>");
+
 	// access standalone command line arguments
 	QStringList argv = context.argv();
 	// create QWidget
@@ -179,4 +182,4 @@ void Scoring::spin_cb(int value) {
 }
 }
 
-PLUGINLIB_DECLARE_CLASS(rqt_roah_rsbb, Scoring, rqt_roah_rsbb::Scoring, rqt_gui_cpp::Plugin)
+PLUGINLIB_EXPORT_CLASS(rqt_roah_rsbb::Scoring, rqt_gui_cpp::Plugin)

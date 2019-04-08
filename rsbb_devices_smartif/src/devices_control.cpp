@@ -185,4 +185,4 @@ namespace rqt_roah_devices
 
 
 
-PLUGINLIB_DECLARE_CLASS (rqt_roah_devices, DevicesControl, rqt_roah_devices::DevicesControl, rqt_gui_cpp::Plugin)
+PLUGINLIB_EXPORT_CLASS (rqt_roah_devices::DevicesControl, rqt_gui_cpp::Plugin)

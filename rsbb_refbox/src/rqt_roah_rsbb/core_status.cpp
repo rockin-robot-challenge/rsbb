@@ -125,4 +125,4 @@ void CoreStatus::exit() {
 }
 }
 
-PLUGINLIB_DECLARE_CLASS(rqt_roah_rsbb, CoreStatus, rqt_roah_rsbb::CoreStatus, rqt_gui_cpp::Plugin)
+PLUGINLIB_EXPORT_CLASS(rqt_roah_rsbb::CoreStatus, rqt_gui_cpp::Plugin)

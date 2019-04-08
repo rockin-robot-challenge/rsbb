@@ -41,7 +41,7 @@ void ActiveRobots::initPlugin(qt_gui_cpp::PluginContext& context) {
 	// extend the widget with all attributes and children from UI file
 	ui_.setupUi(widget_);
 
-	ui_.table->horizontalHeader()->setResizeMode(QHeaderView::Stretch);
+	ui_.table->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
 
 	// add widget to the user interface
 	context.addWidget(widget_);
@@ -129,4 +129,4 @@ void ActiveRobots::update() {
 }
 }
 
-PLUGINLIB_DECLARE_CLASS(rqt_roah_rsbb, ActiveRobots, rqt_roah_rsbb::ActiveRobots, rqt_gui_cpp::Plugin)
+PLUGINLIB_EXPORT_CLASS(rqt_roah_rsbb::ActiveRobots, rqt_gui_cpp::Plugin)

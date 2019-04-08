@@ -1,0 +1,14 @@
+objects:
+- id: 1
+  description: "Brick"
+- id: 2
+  description: "Cube"
+- id: 3
+  description: "Cylinder"
+
+table_size:
+  x: 1.0
+  y: 1.5
+
+goal_timeout:
+  120.0

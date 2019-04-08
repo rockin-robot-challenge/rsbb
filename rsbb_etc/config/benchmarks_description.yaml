@@ -132,5 +132,48 @@ benchmarks_description:
   order: 7
   timeout: 120.0
 
+- code: "HPPF"
+  desc: "Functionality Benchmark 4: People Perception Functionality"
+  scripted: true
+  multiple_robots: false
+  commands_devices: false
+  order: 8
+  default_goal_timeout: 120.0
+  global_timeout: 600.0
+  record_topics:
+    - "actor_markerset/pose"
+    - "actor_markerset/pose2d"
 
+- code: "HPFF"
+  desc: "Functionality Benchmark 5: Person Following Functionality"
+  scripted: true
+  multiple_robots: false
+  commands_devices: false
+  order: 9
+  default_goal_timeout: 300.0
+  global_timeout: 305.0
+  scoring:
+    - Penalized Behaviors:
+      - { type: uint, desc: "The robot bumps into the furniture or people." }
+    - Disqualifying Behaviors:
+      - { type: uint, desc: "The robot hits people or the furniture." }
+      - { type: uint, desc: "The robot damages the test bed." }
+  record_topics:
+    - "robot_markerset/pose"
+    - "robot_markerset/pose2d"
+    - "actor_markerset/pose"
+    - "actor_markerset/pose2d"
 
+- code: "HGMF"
+  desc: "Functionality Benchmark 6: Grasping and Manipulation Functionality"
+  scripted: true
+  multiple_robots: false
+  commands_devices: false
+  order: 10
+  default_goal_timeout: 120.0
+  global_timeout: 600.0
+  record_topics:
+    - "table_origin/pose"
+    - "table_origin/pose2d"
+    - "actor_markerset/pose"
+    - "actor_markerset/pose2d"

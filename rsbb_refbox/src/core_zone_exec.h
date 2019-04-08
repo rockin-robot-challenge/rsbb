@@ -566,7 +566,7 @@ class ExecutingExternallyControlledBenchmark: public ExecutingSingleRobotBenchma
 	Subscriber bmbox_state_subscriber_, bmbox_status_subscriber_, record_server_status_subscriber_;
 
 	// Incoming script server services
-	ServiceServer execute_manual_operation_service_, execute_goal_service_, end_benchmark_service_;
+	ServiceServer execute_manual_operation_service_, execute_goal_service_, end_benchmark_service_, abort_benchmark_service_;
 
 	// Outgoing script server services
 	ServiceClient init_benchmark_service_, terminate_benchmark_service_;
@@ -612,7 +612,8 @@ public:
 		execute_manual_operation_service_(ss_.nh.advertiseService("bmbox/execute_manual_operation", &ExecutingExternallyControlledBenchmark::execute_manual_operation_callback, this)),
 		execute_goal_service_(ss_.nh.advertiseService("bmbox/execute_goal", &ExecutingExternallyControlledBenchmark::execute_goal_callback, this)),
 		end_benchmark_service_(ss_.nh.advertiseService("bmbox/end_benchmark", &ExecutingExternallyControlledBenchmark::end_benchmark_callback, this)),
-
+		abort_benchmark_service_(ss_.nh.advertiseService("bmbox/abort_benchmark", &ExecutingExternallyControlledBenchmark::abort_benchmark_callback, this)),
+		
 		init_benchmark_service_(ss_.nh.serviceClient<InitBenchmark>("bmbox/init_benchmark")),
 		terminate_benchmark_service_(ss_.nh.serviceClient<TerminateBenchmark>("bmbox/terminate_benchmark")),
 
@@ -1271,6 +1272,27 @@ public:
 		phase_post("Benchmark complete!");
 
 		res.refbox_state = refbox_state_;
+		res.result.data = true;
+		return true;
+	}
+
+	/*
+	 * Called by the benchmark script to abort the benchmark, even if a goal is running
+	 */
+	bool abort_benchmark_callback(AbortBenchmark::Request& req, AbortBenchmark::Response& res) {
+		printStates();
+
+		cout << endl << endl << "abort_benchmark_callback" << endl << endl;
+
+		stop();
+
+		if(req.message.data.empty()) {
+			phase_post("Benchmark complete!");
+		}
+		else {
+			phase_post(req.message.data);
+		}
+
 		res.result.data = true;
 		return true;
 	}
