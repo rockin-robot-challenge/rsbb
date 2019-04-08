@@ -22,6 +22,8 @@
       <arg name="smartif_host" default="192.168.1.56"/>
     </include>
     
+    <include file="$(find rsbb_etc)/launch/mocap_optitrack.launch" />
+    
     <node pkg="roah_rsbb" type="core" name="roah_rsbb_core" respawn="true" output="screen">
       <rosparam file="$(find rsbb_etc)/config/general.yaml" command="load" />
       <param name="benchmarks_file" type="string" value="$(find rsbb_etc)/config/benchmarks_description.yaml"/>

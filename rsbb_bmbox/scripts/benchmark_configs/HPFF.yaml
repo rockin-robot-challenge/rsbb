@@ -1,0 +1,11 @@
+min_following_distance:
+  0.15
+
+max_following_distance:
+  3.5
+
+desired_following_distance:
+  2.0
+
+goal_timeout:
+  300.0

@@ -26,4 +26,3 @@ rigid_bodies:
     child_frame_id: actor_markerset
     parent_frame_id: testbed_origin
     publish_only_if_tracked: true
-

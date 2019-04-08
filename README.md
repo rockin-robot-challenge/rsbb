@@ -4,9 +4,9 @@ RSBB: Referee, Scoring and Benchmarking Box
 This repository contains the ERL-SR (European Robotics League - Service Robots) Referee, Scoring and Benchmarking Box.
 Note that the name 'rockin' refers to the previous version of the competition.
 
-:information_source: This package is oriented to the competition organisers, **team members** may want to visit the package for communication with the RSBB, available in [at_home_rsbb_comm_ros](https://github.com/rockin-robot-challenge/at_home_rsbb_comm_ros).
+:information_source: This package is oriented to the competition organisers. **Team members** may want to visit the package for communication with the RSBB, available in [at_home_rsbb_comm_ros](https://github.com/rockin-robot-challenge/at_home_rsbb_comm_ros).
 
-Table of Content:
+Table of Contents:
 
 * [Installation guide (this README)](/README.md#Installation)
 * [Architecture overview](/rsbb_etc/doc/rsbb_arch_overview.md)
@@ -19,6 +19,14 @@ Table of Content:
 
 # Installation
 
+RSBB works on:
+* Ubuntu 14.04 + ROS Indigo (`indigo` branch)
+* Ubuntu 16.04 + ROS Kinetic (`master` branch)
+* Ubuntu 18.04 + ROS Melodic (`master` branch)
+
+Make sure you choose the correct branch for your distribution.
+If you are on Ubuntu 14, you need to `git checkout indigo` after cloning this repository.
+
 :warning: Please remember to always update right before the competitions!
 ```bash
 git pull
@@ -30,31 +38,23 @@ This repo is shared with the [roah_rsbb_comm_ros](https://github.com/rockin-robo
 
 ## Dependencies
 
-You need to have installed a C++11 compiler, CMake, Boost, Protobuf and OpenSSL.
+You need to have installed a C++11 compiler, CMake, Boost, Protobuf, OpenSSL and mplayer (to play the sounds).
 
 If you are using Ubuntu, install the dependencies with:
 ```bash
-sudo apt-get install build-essential cmake libboost-all-dev libprotoc-dev protobuf-compiler libssl-dev ros-$ROS_DISTRO-map-server
+sudo apt-get install build-essential cmake libboost-all-dev libprotoc-dev protobuf-compiler libssl-dev ros-$ROS_DISTRO-map-server mplayer
 ```
 
+<!---
+Probably not necessary anymore:
 And install the Levenshtein module for Python:
 ```bash
 sudo easy_install python-Levenshtein
+# For ubuntu 18: sudo apt-get install python-levenshtein
 ```
-<!---
-still necessary?
 -->
-
-:warning: The RSBB is not compatible with Ubuntu 16.04, you need to use ROS Indigo on Ubuntu 14.04.x (or ROS Hydro on Ubuntu 12.04.x).
-To install and set up ROS, follow the instructions at http://wiki.ros.org/ROS/Installation/ .
-
-This version of the RSBB was tested with Ubuntu 14.04.5 LTS (Trusty Tahr) and ROS Indigo.
 
 The RSBB is a collection of ROS packages, and does not depend on other packages or software except the ones listed before.
-
-<!---
-TODO add the program to play sounds in the dependencies
--->
 
 ## Compiling
 
@@ -65,6 +65,8 @@ git submodule update --init
 
 Compile as a normal ROS package in your Catkin workspace.
 
+**Note on Virtual Machines**:
+If running in a VM, I've encountered a problem where the machine must have at least 2 CPU cores available, otherwise RSBB won't build correctly. Also, you might have network connectivity issues when running inside a VM.
 
 ## Network Setup
 
@@ -72,7 +74,6 @@ The robots and the RSBB must be on the same network.
 The following graph shows an example of a possible network setup:
 
 ![Network Example](/rsbb_etc/doc/images/example_RSBB_network_graph.svg)
-
 
 
 ## Configuration
@@ -84,7 +85,7 @@ From the example of the network reported before, the broadcast address would be 
 These two directories can be the same.
 For example: `~/rsbb_output/`, in this case the directory "rsbb_output" should be created in home.
 
-The configuration parameters are documented in [configuration overview](/rsbb_etc/doc/configuration_overview.md).
+The configuration parameters are documented in [configuration overview](/rsbb_etc/doc/configuration/configuration_overview.md).
 
 
 ## Running
@@ -99,11 +100,21 @@ roslaunch rsbb_etc rsbb.launch
 
 Now all benchmarks can be executed, but since a robot must be availabe on the network, it is often useful to test the communication with the RSBB by running the so called Dummy Robot, from the [roah_rsbb_comm_ros](https://github.com/rockin-robot-challenge/at_home_rsbb_comm_ros) package.
 
+For benchmarks that require motion capture, there is a helper package that publishes the required topics, as if they were being published by the mocap system. To run it, call e.g. : 
+```bash
+rosrun rsbb_mocap_helpers/FBM4_mock.py
+```
+
+
 ### Executing benchmarks
 
 `TODO: brief instructions to run benchmarks`
 Running a benchmark is similar to the previous (deprecated) verison of the RSBB.
 Some instructions are available in the [RSBBv1 documentation (deprecated)](/rsbb_etc/doc/RoAH_RSBBv1_Manual_deprecated.pdf).
+
+## Support
+
+If you have any questions, please add them as issues on this repo.
 
 <!--- TODO
 * auxiliary nodes (MoCap, etc)

@@ -6,6 +6,8 @@
       <param name="resources_directory" type="string" value="$(find rsbb_etc)/"/>
     </node>
     
+    <include file="$(find rsbb_etc)/launch/mocap_optitrack.launch" />
+    
   </group>
   
 </launch>

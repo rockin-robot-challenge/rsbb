@@ -21,6 +21,7 @@ add_message_files(
 
 add_service_files(
   FILES
+  AbortBenchmark.srv
   InitBenchmark.srv
   TerminateBenchmark.srv
   StartBenchmark.srv

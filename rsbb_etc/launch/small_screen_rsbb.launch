@@ -35,6 +35,8 @@
     
     <node name="roah_rsbb_core_shutdown" pkg="roah_rsbb" type="shutdown_service" required="true"/>
     
+    <include file="$(find rsbb_etc)/launch/mocap_optitrack.launch" />
+    
   </group>
   
   
